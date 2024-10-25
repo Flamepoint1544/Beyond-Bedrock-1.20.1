@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "beyond_bedrock:block/ultimatium/ultimatium_block" }
+    }
+}
