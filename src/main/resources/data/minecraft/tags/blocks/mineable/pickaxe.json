@@ -1,6 +1,8 @@
 {
     "replace": false,
     "values": [
-        "beyond_bedrock:ultimatium_ore"
+        "beyond_bedrock:ultimatium_ore",
+        "beyond_bedrock:ultimatium_block",
+        "beyond_bedrock:ultimatium_raw_block"
     ]
 }
