@@ -9,9 +9,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-    public static final Block ULTIMATIUM_ORE = register(new Block(AbstractBlock.Settings.create()), "ultimatium_ore", true);
-    public static final Block ULTIMATIUM_RAW = register(new Block(AbstractBlock.Settings.create()), "ultimatium_raw_block", true); 
-    public static final Block ULTIMATIUM = register(new Block(AbstractBlock.Settings.create()), "ultimatium_block", true);
+    public static final Block ULTIMATIUM_ORE = register(new Block(AbstractBlock.Settings.create().luminance((state) -> {return 10;})), "ultimatium_ore", true);
+    public static final Block ULTIMATIUM_RAW = register(new Block(AbstractBlock.Settings.create().luminance((state) -> {return 15;})), "ultimatium_raw_block", true); 
+    public static final Block ULTIMATIUM = register(new Block(AbstractBlock.Settings.create().luminance((state) -> {return 15;})), "ultimatium_block", true);
 
     public static Block register(Block block, String id, boolean registerItem){
         // Create Identifier
