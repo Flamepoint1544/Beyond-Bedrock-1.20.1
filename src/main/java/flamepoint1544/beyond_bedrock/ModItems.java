@@ -12,6 +12,9 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
+    public static final Item ULTIMATIUM = register(new Item(new Item.Settings()), "ultimatium");
+    public static final Item ULTIMATIUM_RAW = register(new Item(new Item.Settings()), "ultimatium_raw");
+    
     // Registry keys
     public static final RegistryKey<ItemGroup> PRIMARY_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(BeyondBedrock.MOD_ID, "primary_item_group"));
 
