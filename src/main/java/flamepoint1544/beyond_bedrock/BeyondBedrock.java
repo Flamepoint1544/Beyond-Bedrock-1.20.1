@@ -32,7 +32,7 @@ public class BeyondBedrock implements ModInitializer {
 		LOGGER.info("Items Loaded");
 
 		// add in ores
-		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, CUSTOM_ORE_PLACED_KEY);
+		BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES, CUSTOM_ORE_PLACED_KEY);
 		LOGGER.info("Ore generation loaded");
 	}
 }
