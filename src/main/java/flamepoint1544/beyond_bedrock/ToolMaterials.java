@@ -1,6 +1,8 @@
 package flamepoint1544.beyond_bedrock;
 
 import java.util.function.Supplier;
+
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Lazy;
@@ -8,6 +10,9 @@ import net.minecraft.util.Lazy;
 public enum ToolMaterials implements ToolMaterial{
     ULTIMATIUM(5, 4062, 10.0f, 5.0f, 25, () ->{
         return Ingredient.ofItems(ModItems.ULTIMATIUM);
+    }),
+    COPPER(2, 131, 6.0f, 2.0f, 16, () ->{
+        return Ingredient.ofItems(Items.COPPER_INGOT);
     });
 
     private final int miningLevel;
