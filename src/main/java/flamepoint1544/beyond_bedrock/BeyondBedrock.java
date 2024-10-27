@@ -27,10 +27,6 @@ public class BeyondBedrock implements ModInitializer {
 		ModBlocks.initialize();
 		LOGGER.info("Blocks Loaded");
 
-		// initialize Armor Materials
-		ModArmorMaterial.initialize();
-		LOGGER.info("Armor Materials Loaded");
-
 		// initialize items
 		ModItems.initialize();
 		LOGGER.info("Items Loaded");
