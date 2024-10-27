@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        "beyond_bedrock:ultimatium_helmet",
+        "beyond_bedrock:ultimatium_chestplate",
+        "beyond_bedrock:ultimatium_leggings",
+        "beyond_bedrock:ultimatium_boots",
+        "beyond_bedrock:copper_helmet",
+        "beyond_bedrock:copper_chestplate",
+        "beyond_bedrock:copper_leggings",
+        "beyond_bedrock:copper_boots"
+    ]
+}

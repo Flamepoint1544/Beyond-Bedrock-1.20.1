@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#N#"
+    ],
+    "key": {
+        "#": {
+            "item": "beyond_bedrock:ultimatium"
+        },
+        "N": {
+            "item": "beyond_bedrock:netherite_base_helmet"
+        }
+    },
+    "result": {
+        "item": "beyond_bedrock:ultimatium_helmet",
+        "count": 1
+    }
+}

@@ -41,6 +41,18 @@ public class ModItems {
     public static final Item ULTIMATIUM_LEGGINGS = register(new ArmorItem(ArmorMaterials.ULTIMATIUM, Type.LEGGINGS, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_leggings");
     public static final Item ULTIMATIUM_BOOTS = register(new ArmorItem(ArmorMaterials.ULTIMATIUM, Type.BOOTS, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_boots");
 
+    // Netherite Frame
+    public static final Item NETHERITE_FRAME_HELMET = register(new Item(new Item.Settings()), "netherite_frame_helmet");
+    public static final Item NETHERITE_FRAME_CHESTPLATE = register(new Item(new Item.Settings()), "netherite_frame_chestplate");
+    public static final Item NETHERITE_FRAME_LEGGINGS = register(new Item(new Item.Settings()), "netherite_frame_leggings");
+    public static final Item NETHERITE_FRAME_BOOTS = register(new Item(new Item.Settings()), "netherite_frame_boots");
+
+    // Netherite Base
+    public static final Item NETHERITE_BASE_HELMET = register(new Item(new Item.Settings()), "netherite_base_helmet");
+    public static final Item NETHERITE_BASE_CHESTPLATE = register(new Item(new Item.Settings()), "netherite_base_chestplate");
+    public static final Item NETHERITE_BASE_LEGGINGS = register(new Item(new Item.Settings()), "netherite_base_leggings");
+    public static final Item NETHERITE_BASE_BOOTS = register(new Item(new Item.Settings()), "netherite_base_boots");
+
     // Copper Tools
     public static final Item COPPER_SWORD = register(new SwordItem(ToolMaterials.COPPER, 3, -2.4f, new Item.Settings()), "copper_sword");
     public static final Item COPPER_SHOVEL = register(new ShovelItem(ToolMaterials.COPPER, 1.5f, -3, new Item.Settings()), "copper_shovel");
@@ -112,6 +124,14 @@ public class ModItems {
             itemGroup.add(COPPER_CHESTPLATE);
             itemGroup.add(COPPER_LEGGINGS);
             itemGroup.add(COPPER_BOOTS);
+            itemGroup.add(NETHERITE_FRAME_HELMET);
+            itemGroup.add(NETHERITE_FRAME_CHESTPLATE);
+            itemGroup.add(NETHERITE_FRAME_LEGGINGS);
+            itemGroup.add(NETHERITE_FRAME_BOOTS);
+            itemGroup.add(NETHERITE_BASE_HELMET);
+            itemGroup.add(NETHERITE_BASE_CHESTPLATE);
+            itemGroup.add(NETHERITE_BASE_LEGGINGS);
+            itemGroup.add(NETHERITE_BASE_BOOTS);
          });
     }
 }

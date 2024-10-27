@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "N#N",
+        "NNN",
+        "NNN"
+    ],
+    "key": {
+        "#": {
+            "item": "beyond_bedrock:ultimatium_core"
+        },
+        "N": {
+            "item": "minecraft:netherite_ingot"
+        }
+    },
+    "result": {
+        "item": "beyond_bedrock:netherite_frame_chestplate",
+        "count": 1
+    }
+}
