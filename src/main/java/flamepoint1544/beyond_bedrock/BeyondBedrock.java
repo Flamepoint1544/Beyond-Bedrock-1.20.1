@@ -25,7 +25,11 @@ public class BeyondBedrock implements ModInitializer {
 	public void onInitialize() {
 		// Initialize blocks
 		ModBlocks.initialize();
-		LOGGER.info("Blocks loaded");
+		LOGGER.info("Blocks Loaded");
+
+		// initialize Armor Materials
+		ModArmorMaterial.initialize();
+		LOGGER.info("Armor Materials Loaded");
 
 		// initialize items
 		ModItems.initialize();
@@ -33,6 +37,6 @@ public class BeyondBedrock implements ModInitializer {
 
 		// add in ores
 		BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES, CUSTOM_ORE_PLACED_KEY);
-		LOGGER.info("Ore generation loaded");
+		LOGGER.info("Ore generation Loaded");
 	}
 }

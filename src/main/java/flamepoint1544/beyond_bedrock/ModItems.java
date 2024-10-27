@@ -9,6 +9,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.ShearsItem;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
 import net.minecraft.registry.Registries;
@@ -27,6 +28,7 @@ public class ModItems {
     public static final Item ULTIMATIUM_PICKAXE = register(new PickaxeItem(ToolMaterials.ULTIMATIUM, 1, 2.8f, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_pickaxe");
     public static final Item ULTIMATIUM_AXE = register(new AxeItem(ToolMaterials.ULTIMATIUM, 6, -3.2f, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_axe");
     public static final Item ULTIMATIUM_HOE = register(new HoeItem(ToolMaterials.ULTIMATIUM, 0, -3, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_hoe");
+    public static final Item ULTIMATIUM_SHEAR = register(new ShearsItem(new Item.Settings().maxDamage(4062)), "ultimatium_shears");
 
     // Registry keys
     public static final RegistryKey<ItemGroup> PRIMARY_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(BeyondBedrock.MOD_ID, "primary_item_group"));
@@ -59,6 +61,7 @@ public class ModItems {
             itemGroup.add(ULTIMATIUM_AXE);
             itemGroup.add(ULTIMATIUM_SHOVEL);
             itemGroup.add(ULTIMATIUM_HOE);
+            itemGroup.add(ULTIMATIUM_SHEAR);
             itemGroup.add(ModBlocks.ULTIMATIUM);
             itemGroup.add(ModBlocks.ULTIMATIUM_ORE);
             itemGroup.add(ModBlocks.ULTIMATIUM_RAW);
