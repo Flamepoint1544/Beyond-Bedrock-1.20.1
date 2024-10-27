@@ -20,9 +20,12 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
 public class ModItems {
+    // Ultimatium
     public static final Item ULTIMATIUM = register(new Item(new Item.Settings().rarity(Rarity.RARE)), "ultimatium");
     public static final Item ULTIMATIUM_RAW = register(new Item(new Item.Settings().rarity(Rarity.RARE)), "ultimatium_raw");
     public static final Item ULTIMATIUM_CORE = register(new Item(new Item.Settings().rarity(Rarity.RARE)), "ultimatium_core");
+    
+    // Ultimatium tools
     public static final Item ULTIMATIUM_SWORD = register(new SwordItem(ToolMaterials.ULTIMATIUM, 3, -2.4f, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_sword");
     public static final Item ULTIMATIUM_SHOVEL = register(new ShovelItem(ToolMaterials.ULTIMATIUM, 1.5f, -3.0f, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_shovel");
     public static final Item ULTIMATIUM_PICKAXE = register(new PickaxeItem(ToolMaterials.ULTIMATIUM, 1, 2.8f, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_pickaxe");
@@ -30,7 +33,7 @@ public class ModItems {
     public static final Item ULTIMATIUM_HOE = register(new HoeItem(ToolMaterials.ULTIMATIUM, 0, -3, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_hoe");
     public static final Item ULTIMATIUM_SHEAR = register(new ShearsItem(new Item.Settings().maxDamage(4062)), "ultimatium_shears");
 
-    // Registry keys
+    // item group registry keys
     public static final RegistryKey<ItemGroup> PRIMARY_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(BeyondBedrock.MOD_ID, "primary_item_group"));
 
     // Item Groups
@@ -38,6 +41,10 @@ public class ModItems {
     .icon(() -> new ItemStack(Items.BEDROCK.asItem()))
     .displayName(Text.translatable("itemGroup.beyond_bedrock.primary_item_group")).build();
     
+    /***************************************************************************************************
+     * +# register(Item item, String id): Item
+     * Registers items using the string id and the modid defined in the main class to make an identifier
+     ***************************************************************************************************/
     public static Item register(Item item, String id){
         // Create Identifier
         Identifier itemID = Identifier.of(BeyondBedrock.MOD_ID, id);
@@ -49,10 +56,16 @@ public class ModItems {
         return registeredItem;
     }
 
+    /**********************************************************
+     * +# initialize(): void
+     * Initializes the file while also registering item groups
+     *********************************************************/
     public static void initialize(){
+        // Register group
         Registry.register(Registries.ITEM_GROUP, PRIMARY_GROUP_KEY, PRIMARY_ITEM_GROUP);
 
-         ItemGroupEvents.modifyEntriesEvent(PRIMARY_GROUP_KEY).register(itemGroup ->{
+        // add items to registered group
+        ItemGroupEvents.modifyEntriesEvent(PRIMARY_GROUP_KEY).register(itemGroup ->{
             itemGroup.add(ULTIMATIUM);
             itemGroup.add(ULTIMATIUM_RAW);
             itemGroup.add(ULTIMATIUM_CORE);

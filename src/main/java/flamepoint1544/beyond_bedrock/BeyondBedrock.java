@@ -16,7 +16,7 @@ public class BeyondBedrock implements ModInitializer {
 	// Mod ID
 	public static final String MOD_ID = "beyond_bedrock";
 	
-	public static final RegistryKey<PlacedFeature> CUSTOM_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"ultimatium"));
+	public static final RegistryKey<PlacedFeature> ULTIMATIUM_ORE_FEATURE = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"ultimatium"));
 
 	// system logger
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
@@ -36,7 +36,7 @@ public class BeyondBedrock implements ModInitializer {
 		LOGGER.info("Items Loaded");
 
 		// add in ores
-		BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES, CUSTOM_ORE_PLACED_KEY);
+		BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES, ULTIMATIUM_ORE_FEATURE);
 		LOGGER.info("Ore generation Loaded");
 	}
 }
