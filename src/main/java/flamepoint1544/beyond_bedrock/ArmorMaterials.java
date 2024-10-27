@@ -17,11 +17,11 @@ import net.minecraft.util.Util;
 public enum ArmorMaterials implements StringIdentifiable, ArmorMaterial {
     @SuppressWarnings({ "rawtypes", "unchecked" })
     ULTIMATIUM("ultimatium", 5, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 1);
-        map.put(Type.LEGGINGS, 2);
-        map.put(Type.CHESTPLATE, 3);
-        map.put(Type.HELMET, 1);
-    }), 15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0f, 0.0f, () -> {
+        map.put(Type.BOOTS, 3);
+        map.put(Type.LEGGINGS, 6);
+        map.put(Type.CHESTPLATE, 8);
+        map.put(Type.HELMET, 3);
+    }), 15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 5.0f, 0.4f, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.ULTIMATIUM});
     });
 
