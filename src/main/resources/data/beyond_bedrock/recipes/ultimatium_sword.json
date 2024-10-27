@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "N",
+        "/"
+    ],
+    "key": {
+        "#": {
+            "item": "beyond_bedrock:ultimatium_block"
+        },
+        "/": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "N": {
+            "item": "minecraft:netherite_sword"
+        }
+    },
+    "result": {
+        "item": "beyond_bedrock:ultimatium_sword",
+        "count": 1
+    }
+}
