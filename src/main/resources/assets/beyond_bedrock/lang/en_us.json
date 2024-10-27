@@ -1,7 +1,14 @@
 {
     "item.beyond_bedrock.ultimatium": "Ultimatium Crystal",
     "item.beyond_bedrock.ultimatium_raw": "Raw Ultimatium Crystal",
+    "item.beyond_bedrock.ultimatium_core": "Ultimatium Core",
+    "item.beyond_bedrock.ultimatium_sword": "Ultimatium Sword",
+    "item.beyond_bedrock.ultimatium_shovel": "Ultimatium Shovel",
+    "item.beyond_bedrock.ultimatium_pickaxe": "Ultimatium Pickaxe",
+    "item.beyond_bedrock.ultimatium_axe": "Ultimatium Axe",
+    "item.beyond_bedrock.ultimatium_hoe": "Ultimatium Hoe",
     "block.beyond_bedrock.ultimatium_block": "Ultimatium Crystal Block",
     "block.beyond_bedrock.ultimatium_ore": "Ultimatium Ore",
-    "block.beyond_bedrock.ultimatium_raw_block": "Raw Ultimatium Crystal Block"
+    "block.beyond_bedrock.ultimatium_raw_block": "Raw Ultimatium Crystal Block",
+    "itemGroup.beyond_bedrock.primary_item_group": "Beyond Bedrock"
 }
