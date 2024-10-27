@@ -41,12 +41,18 @@ public class ModItems {
     public static final Item ULTIMATIUM_LEGGINGS = register(new ArmorItem(ArmorMaterials.ULTIMATIUM, Type.LEGGINGS, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_leggings");
     public static final Item ULTIMATIUM_BOOTS = register(new ArmorItem(ArmorMaterials.ULTIMATIUM, Type.BOOTS, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_boots");
 
-    // Copper
+    // Copper Tools
     public static final Item COPPER_SWORD = register(new SwordItem(ToolMaterials.COPPER, 3, -2.4f, new Item.Settings()), "copper_sword");
     public static final Item COPPER_SHOVEL = register(new ShovelItem(ToolMaterials.COPPER, 1.5f, -3, new Item.Settings()), "copper_shovel");
     public static final Item COPPER_PICKAXE = register(new PickaxeItem(ToolMaterials.COPPER, 1, 2.8f, new Item.Settings()), "copper_pickaxe");
     public static final Item COPPER_AXE = register(new AxeItem(ToolMaterials.COPPER, 6, -3.2f, new Item.Settings()), "copper_axe");
     public static final Item COPPER_HOE = register(new HoeItem(ToolMaterials.COPPER, 0, -3, new Item.Settings()), "copper_hoe");
+
+    // Copper Armor
+    public static final Item COPPER_HELMET = register(new ArmorItem(ArmorMaterials.COPPER, Type.HELMET, new Item.Settings()), "copper_helmet");
+    public static final Item COPPER_CHESTPLATE = register(new ArmorItem(ArmorMaterials.COPPER, Type.CHESTPLATE, new Item.Settings()), "copper_chestplate");
+    public static final Item COPPER_LEGGINGS = register(new ArmorItem(ArmorMaterials.COPPER, Type.LEGGINGS, new Item.Settings()), "copper_leggings");
+    public static final Item COPPER_BOOTS = register(new ArmorItem(ArmorMaterials.COPPER, Type.BOOTS, new Item.Settings()), "copper_boots");
 
     // item group registry keys
     public static final RegistryKey<ItemGroup> PRIMARY_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(BeyondBedrock.MOD_ID, "primary_item_group"));
@@ -97,6 +103,15 @@ public class ModItems {
             itemGroup.add(ModBlocks.ULTIMATIUM);
             itemGroup.add(ModBlocks.ULTIMATIUM_ORE);
             itemGroup.add(ModBlocks.ULTIMATIUM_RAW);
+            itemGroup.add(COPPER_SWORD);
+            itemGroup.add(COPPER_PICKAXE);
+            itemGroup.add(COPPER_AXE);
+            itemGroup.add(COPPER_SHOVEL);
+            itemGroup.add(COPPER_HOE);
+            itemGroup.add(COPPER_HELMET);
+            itemGroup.add(COPPER_CHESTPLATE);
+            itemGroup.add(COPPER_LEGGINGS);
+            itemGroup.add(COPPER_BOOTS);
          });
     }
 }

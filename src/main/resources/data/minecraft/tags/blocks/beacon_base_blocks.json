@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "beyond_bedrock:ultimatium_block",
+        "minecraft:copper_block",
+        "minecraft:waxed_copper_block",
+        "minecraft:lapis_block",
+        "minecraft:redstone_block"
+    ]
+}

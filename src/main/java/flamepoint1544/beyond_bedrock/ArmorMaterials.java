@@ -7,6 +7,7 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorItem.Type;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -16,13 +17,22 @@ import net.minecraft.util.Util;
 
 public enum ArmorMaterials implements StringIdentifiable, ArmorMaterial {
     @SuppressWarnings({ "rawtypes", "unchecked" })
-    ULTIMATIUM("ultimatium", 5, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
+    ULTIMATIUM("ultimatium", 45, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
         map.put(Type.BOOTS, 3);
         map.put(Type.LEGGINGS, 6);
         map.put(Type.CHESTPLATE, 8);
         map.put(Type.HELMET, 3);
     }), 15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 5.0f, 0.4f, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.ULTIMATIUM});
+    }),
+    @SuppressWarnings({ "rawtypes", "unchecked" })
+   COPPER("copper", 10, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
+      map.put(Type.BOOTS, 2);
+      map.put(Type.LEGGINGS, 5);
+      map.put(Type.CHESTPLATE, 6);
+      map.put(Type.HELMET, 2);
+    }), 13, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0, 0, () -> {
+      return Ingredient.ofItems(new ItemConvertible[]{Items.COPPER_INGOT});
     });
 
     @SuppressWarnings("deprecation")
