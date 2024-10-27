@@ -83,6 +83,10 @@ public class ModItems {
             itemGroup.add(ULTIMATIUM_SHOVEL);
             itemGroup.add(ULTIMATIUM_HOE);
             itemGroup.add(ULTIMATIUM_SHEAR);
+            itemGroup.add(ULTIMATIUM_HELMET);
+            itemGroup.add(ULTIMATIUM_CHESTPLATE);
+            itemGroup.add(ULTIMATIUM_LEGGINGS);
+            itemGroup.add(ULTIMATIUM_BOOTS);
             itemGroup.add(ModBlocks.ULTIMATIUM);
             itemGroup.add(ModBlocks.ULTIMATIUM_ORE);
             itemGroup.add(ModBlocks.ULTIMATIUM_RAW);
