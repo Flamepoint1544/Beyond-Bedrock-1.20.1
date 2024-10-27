@@ -1,20 +1,32 @@
 package flamepoint1544.beyond_bedrock;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.item.AxeItem;
+import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.ShovelItem;
+import net.minecraft.item.SwordItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 public class ModItems {
-    public static final Item ULTIMATIUM = register(new Item(new Item.Settings()), "ultimatium");
-    public static final Item ULTIMATIUM_RAW = register(new Item(new Item.Settings()), "ultimatium_raw");
-    
+    public static final Item ULTIMATIUM = register(new Item(new Item.Settings().rarity(Rarity.RARE)), "ultimatium");
+    public static final Item ULTIMATIUM_RAW = register(new Item(new Item.Settings().rarity(Rarity.RARE)), "ultimatium_raw");
+    public static final Item ULTIMATIUM_CORE = register(new Item(new Item.Settings().rarity(Rarity.RARE)), "ultimatium_core");
+    public static final Item ULTIMATIUM_SWORD = register(new SwordItem(ToolMaterials.ULTIMATIUM, 3, -2.4f, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_sword");
+    public static final Item ULTIMATIUM_SHOVEL = register(new ShovelItem(ToolMaterials.ULTIMATIUM, 1.5f, -3.0f, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_shovel");
+    public static final Item ULTIMATIUM_PICKAXE = register(new PickaxeItem(ToolMaterials.ULTIMATIUM, 1, 2.8f, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_pickaxe");
+    public static final Item ULTIMATIUM_AXE = register(new AxeItem(ToolMaterials.ULTIMATIUM, 6, -3.2f, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_axe");
+    public static final Item ULTIMATIUM_HOE = register(new HoeItem(ToolMaterials.ULTIMATIUM, 0, -3, null), "ultimatium_hoe");
+
     // Registry keys
     public static final RegistryKey<ItemGroup> PRIMARY_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(BeyondBedrock.MOD_ID, "primary_item_group"));
 
