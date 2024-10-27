@@ -6,7 +6,6 @@ import java.util.function.Supplier;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorItem.Type;
 import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.ArmorMaterials;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
@@ -15,7 +14,7 @@ import net.minecraft.util.Lazy;
 import net.minecraft.util.StringIdentifiable;
 import net.minecraft.util.Util;
 
-public enum ModArmorMaterial implements StringIdentifiable, ArmorMaterial {
+public enum ArmorMaterials implements StringIdentifiable, ArmorMaterial {
     @SuppressWarnings({ "rawtypes", "unchecked" })
     ULTIMATIUM("ultimatium", 5, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
         map.put(Type.BOOTS, 1);
@@ -47,7 +46,7 @@ public enum ModArmorMaterial implements StringIdentifiable, ArmorMaterial {
 
    @SuppressWarnings({ "rawtypes", "unchecked", "deprecation" })
 
-   private ModArmorMaterial(String name, int durabilityMultiplier, EnumMap protectionAmounts, int enchantability, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier repairIngredientSupplier) {
+   private ArmorMaterials(String name, int durabilityMultiplier, EnumMap protectionAmounts, int enchantability, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier repairIngredientSupplier) {
       this.name = name;
       this.durabilityMultiplier = durabilityMultiplier;
       this.protectionAmounts = protectionAmounts;
