@@ -13,6 +13,9 @@ public enum BBToolMaterials implements ToolMaterial{
     }),
     COPPER(2, 131, 6.0f, 2.0f, 16, () ->{
         return Ingredient.ofItems(Items.COPPER_INGOT);
+    }),
+    FLINT(1, 131,6.0f,2.0f,16, () ->{
+        return Ingredient.ofItems(Items.FLINT);
     });
 
     private final int miningLevel;
