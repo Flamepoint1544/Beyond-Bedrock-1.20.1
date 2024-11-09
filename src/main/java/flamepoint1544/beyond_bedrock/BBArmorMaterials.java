@@ -15,7 +15,7 @@ import net.minecraft.util.Lazy;
 import net.minecraft.util.StringIdentifiable;
 import net.minecraft.util.Util;
 
-public enum ArmorMaterials implements StringIdentifiable, ArmorMaterial {
+public enum BBArmorMaterials implements StringIdentifiable, ArmorMaterial {
     @SuppressWarnings({ "rawtypes", "unchecked" })
     ULTIMATIUM("ultimatium", 45, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
         map.put(Type.BOOTS, 3);
@@ -36,7 +36,7 @@ public enum ArmorMaterials implements StringIdentifiable, ArmorMaterial {
     });
 
     @SuppressWarnings("deprecation")
-    public static final StringIdentifiable.Codec<ArmorMaterials> CODEC = StringIdentifiable.createCodec(ArmorMaterials::values);
+    public static final StringIdentifiable.Codec<BBArmorMaterials> CODEC = StringIdentifiable.createCodec(BBArmorMaterials::values);
     @SuppressWarnings({ "rawtypes", "unchecked" })
     private static final EnumMap<ArmorItem.Type, Integer> BASE_DURABILITY = (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
       map.put(Type.BOOTS, 13);
@@ -56,7 +56,7 @@ public enum ArmorMaterials implements StringIdentifiable, ArmorMaterial {
 
    @SuppressWarnings({ "rawtypes", "unchecked", "deprecation" })
 
-   private ArmorMaterials(String name, int durabilityMultiplier, EnumMap protectionAmounts, int enchantability, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier repairIngredientSupplier) {
+   private BBArmorMaterials(String name, int durabilityMultiplier, EnumMap protectionAmounts, int enchantability, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier repairIngredientSupplier) {
       this.name = name;
       this.durabilityMultiplier = durabilityMultiplier;
       this.protectionAmounts = protectionAmounts;

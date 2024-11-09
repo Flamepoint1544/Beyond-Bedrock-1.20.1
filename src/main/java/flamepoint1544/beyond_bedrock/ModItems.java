@@ -28,18 +28,18 @@ public class ModItems {
     public static final Item ULTIMATIUM_CORE = register(new Item(new Item.Settings().rarity(Rarity.RARE)), "ultimatium_core");
     
     // Ultimatium tools
-    public static final Item ULTIMATIUM_SWORD = register(new SwordItem(ToolMaterials.ULTIMATIUM, 3, -2.4f, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_sword");
-    public static final Item ULTIMATIUM_SHOVEL = register(new ShovelItem(ToolMaterials.ULTIMATIUM, 1.5f, -3, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_shovel");
-    public static final Item ULTIMATIUM_PICKAXE = register(new PickaxeItem(ToolMaterials.ULTIMATIUM, 1, 2.8f, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_pickaxe");
-    public static final Item ULTIMATIUM_AXE = register(new AxeItem(ToolMaterials.ULTIMATIUM, 6, -3.2f, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_axe");
-    public static final Item ULTIMATIUM_HOE = register(new HoeItem(ToolMaterials.ULTIMATIUM, 0, -3, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_hoe");
+    public static final Item ULTIMATIUM_SWORD = register(new SwordItem(BBToolMaterials.ULTIMATIUM, 3, -2.4f, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_sword");
+    public static final Item ULTIMATIUM_SHOVEL = register(new ShovelItem(BBToolMaterials.ULTIMATIUM, 1.5f, -3, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_shovel");
+    public static final Item ULTIMATIUM_PICKAXE = register(new PickaxeItem(BBToolMaterials.ULTIMATIUM, 1, 2.8f, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_pickaxe");
+    public static final Item ULTIMATIUM_AXE = register(new AxeItem(BBToolMaterials.ULTIMATIUM, 6, -3.2f, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_axe");
+    public static final Item ULTIMATIUM_HOE = register(new HoeItem(BBToolMaterials.ULTIMATIUM, 0, -3, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_hoe");
     public static final Item ULTIMATIUM_SHEAR = register(new ShearsItem(new Item.Settings().maxDamage(4062).rarity(Rarity.EPIC)), "ultimatium_shears");
 
     // Ultimatium Armor
-    public static final Item ULTIMATIUM_HELMET = register(new ArmorItem(ArmorMaterials.ULTIMATIUM, Type.HELMET, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_helmet");
-    public static final Item ULTIMATIUM_CHESTPLATE = register(new ArmorItem(ArmorMaterials.ULTIMATIUM, Type.CHESTPLATE, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_chestplate");
-    public static final Item ULTIMATIUM_LEGGINGS = register(new ArmorItem(ArmorMaterials.ULTIMATIUM, Type.LEGGINGS, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_leggings");
-    public static final Item ULTIMATIUM_BOOTS = register(new ArmorItem(ArmorMaterials.ULTIMATIUM, Type.BOOTS, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_boots");
+    public static final Item ULTIMATIUM_HELMET = register(new ArmorItem(BBArmorMaterials.ULTIMATIUM, Type.HELMET, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_helmet");
+    public static final Item ULTIMATIUM_CHESTPLATE = register(new ArmorItem(BBArmorMaterials.ULTIMATIUM, Type.CHESTPLATE, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_chestplate");
+    public static final Item ULTIMATIUM_LEGGINGS = register(new ArmorItem(BBArmorMaterials.ULTIMATIUM, Type.LEGGINGS, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_leggings");
+    public static final Item ULTIMATIUM_BOOTS = register(new ArmorItem(BBArmorMaterials.ULTIMATIUM, Type.BOOTS, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_boots");
 
     // Netherite Frame
     public static final Item NETHERITE_FRAME_HELMET = register(new Item(new Item.Settings()), "netherite_frame_helmet");
@@ -54,17 +54,17 @@ public class ModItems {
     public static final Item NETHERITE_BASE_BOOTS = register(new Item(new Item.Settings()), "netherite_base_boots");
 
     // Copper Tools
-    public static final Item COPPER_SWORD = register(new SwordItem(ToolMaterials.COPPER, 3, -2.4f, new Item.Settings()), "copper_sword");
-    public static final Item COPPER_SHOVEL = register(new ShovelItem(ToolMaterials.COPPER, 1.5f, -3, new Item.Settings()), "copper_shovel");
-    public static final Item COPPER_PICKAXE = register(new PickaxeItem(ToolMaterials.COPPER, 1, 2.8f, new Item.Settings()), "copper_pickaxe");
-    public static final Item COPPER_AXE = register(new AxeItem(ToolMaterials.COPPER, 6, -3.2f, new Item.Settings()), "copper_axe");
-    public static final Item COPPER_HOE = register(new HoeItem(ToolMaterials.COPPER, 0, -3, new Item.Settings()), "copper_hoe");
+    public static final Item COPPER_SWORD = register(new SwordItem(BBToolMaterials.COPPER, 3, -2.4f, new Item.Settings()), "copper_sword");
+    public static final Item COPPER_SHOVEL = register(new ShovelItem(BBToolMaterials.COPPER, 1.5f, -3, new Item.Settings()), "copper_shovel");
+    public static final Item COPPER_PICKAXE = register(new PickaxeItem(BBToolMaterials.COPPER, 1, 2.8f, new Item.Settings()), "copper_pickaxe");
+    public static final Item COPPER_AXE = register(new AxeItem(BBToolMaterials.COPPER, 6, -3.2f, new Item.Settings()), "copper_axe");
+    public static final Item COPPER_HOE = register(new HoeItem(BBToolMaterials.COPPER, 0, -3, new Item.Settings()), "copper_hoe");
 
     // Copper Armor
-    public static final Item COPPER_HELMET = register(new ArmorItem(ArmorMaterials.COPPER, Type.HELMET, new Item.Settings()), "copper_helmet");
-    public static final Item COPPER_CHESTPLATE = register(new ArmorItem(ArmorMaterials.COPPER, Type.CHESTPLATE, new Item.Settings()), "copper_chestplate");
-    public static final Item COPPER_LEGGINGS = register(new ArmorItem(ArmorMaterials.COPPER, Type.LEGGINGS, new Item.Settings()), "copper_leggings");
-    public static final Item COPPER_BOOTS = register(new ArmorItem(ArmorMaterials.COPPER, Type.BOOTS, new Item.Settings()), "copper_boots");
+    public static final Item COPPER_HELMET = register(new ArmorItem(BBArmorMaterials.COPPER, Type.HELMET, new Item.Settings()), "copper_helmet");
+    public static final Item COPPER_CHESTPLATE = register(new ArmorItem(BBArmorMaterials.COPPER, Type.CHESTPLATE, new Item.Settings()), "copper_chestplate");
+    public static final Item COPPER_LEGGINGS = register(new ArmorItem(BBArmorMaterials.COPPER, Type.LEGGINGS, new Item.Settings()), "copper_leggings");
+    public static final Item COPPER_BOOTS = register(new ArmorItem(BBArmorMaterials.COPPER, Type.BOOTS, new Item.Settings()), "copper_boots");
 
     // item group registry keys
     public static final RegistryKey<ItemGroup> PRIMARY_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(BeyondBedrock.MOD_ID, "primary_item_group"));

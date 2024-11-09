@@ -7,7 +7,7 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Lazy;
 
-public enum ToolMaterials implements ToolMaterial{
+public enum BBToolMaterials implements ToolMaterial{
     ULTIMATIUM(5, 4062, 10.0f, 5.0f, 25, () ->{
         return Ingredient.ofItems(ModItems.ULTIMATIUM);
     }),
@@ -24,7 +24,7 @@ public enum ToolMaterials implements ToolMaterial{
     private final Lazy<Ingredient> repairIngredient;
 
     @SuppressWarnings({ "deprecation", "rawtypes", "unchecked" })
-    private ToolMaterials(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier repairIngredient) {
+    private BBToolMaterials(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier repairIngredient) {
         this.miningLevel = miningLevel;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;
