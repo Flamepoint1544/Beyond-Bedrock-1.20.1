@@ -88,45 +88,45 @@ public class ModItems {
 
     // Thorium
 
-    // Bronze
+    // Bronze (Copper Tin)
 
-    // Brass
+    // Brass (Copper Zinc)
 
     // Magnesium
 
-    // cupronickel
+    // cupronickel (Copper Nickel)
 
-    // Sterling Silver
+    // Sterling Silver (Silver Copper)
 
-    // Inconel
+    // Inconel (Nickel Iron)
 
-    // Solder
+    // Solder (Tin Lead)
 
-    // Electrum
+    // Electrum (Silver Gold)
 
-    // Steel-Ultimatium alloy
+    // Stelaruim (Steal Ultimatium)
 
-    // Copper-Ultimatium alloy
+    // Coultium (Copper Ultimatium)
 
-    // Tin-Ultimatium Alloy
+    // (Tin Ultimatium)
 
-    // Silver-Ultimatium Alloy
+    // (Silver Ultimatium)
 
-    // Lead-Ultimatium Alloy
+    // (Lead Ultimatium)
 
-    // Uranium-Ultimatium Alloy
+    // Urantium (Uranium Ultimatium)
 
-    // Nickel-Ultimatium Alloy
+    // (Nickel Ultimatium)
 
-    // Platinum-Ultimatium Alloy
+    // (Platinum Ultimatium)
 
-    // Zinc-Ultimatium Alloy
+    // Zultium (Zinc Ultimatium)
 
-    // Titanium-Ultimatium Alloy
+    // (Titanium Ultimatium)
     
-    // Cobalt-Ultimatium Alloy
+    // (Cobalt Ultimatium)
 
-    // Thorium-Ultimatium Alloy
+    // (Thorium Ultimatium)
 
     // item group registry keys
     public static final RegistryKey<ItemGroup> PRIMARY_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(BeyondBedrock.MOD_ID, "primary_item_group"));
