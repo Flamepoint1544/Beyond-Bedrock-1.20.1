@@ -66,6 +66,68 @@ public class ModItems {
     public static final Item COPPER_LEGGINGS = register(new ArmorItem(BBArmorMaterials.COPPER, Type.LEGGINGS, new Item.Settings()), "copper_leggings");
     public static final Item COPPER_BOOTS = register(new ArmorItem(BBArmorMaterials.COPPER, Type.BOOTS, new Item.Settings()), "copper_boots");
 
+    // Steel
+
+    // Tin
+
+    // Silver
+
+    // Lead
+
+    // Uranium
+
+    // Nickel
+
+    // Platinum
+
+    // Zinc
+
+    // Titanium
+
+    // Cobalt
+
+    // Thorium
+
+    // Bronze
+
+    // Brass
+
+    // Magnesium
+
+    // cupronickel
+
+    // Sterling Silver
+
+    // Inconel
+
+    // Solder
+
+    // Electrum
+
+    // Steel-Ultimatium alloy
+
+    // Copper-Ultimatium alloy
+
+    // Tin-Ultimatium Alloy
+
+    // Silver-Ultimatium Alloy
+
+    // Lead-Ultimatium Alloy
+
+    // Uranium-Ultimatium Alloy
+
+    // Nickel-Ultimatium Alloy
+
+    // Platinum-Ultimatium Alloy
+
+    // Zinc-Ultimatium Alloy
+
+    // Titanium-Ultimatium Alloy
+    
+    // Cobalt-Ultimatium Alloy
+
+    // Thorium-Ultimatium Alloy
+
     // item group registry keys
     public static final RegistryKey<ItemGroup> PRIMARY_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(BeyondBedrock.MOD_ID, "primary_item_group"));
 
