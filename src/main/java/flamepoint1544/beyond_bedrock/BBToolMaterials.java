@@ -16,6 +16,9 @@ public enum BBToolMaterials implements ToolMaterial{
     }),
     FLINT(0, 59, 2.0F, 0.0F, 10, () ->{
         return Ingredient.ofItems(Items.FLINT);
+    }),
+    STEEL(2, 500, 6.0f, 2.0f, 14, () -> {
+        return Ingredient.ofItems(ModItems.STEEL_INGOT);
     });
 
     private final int miningLevel;

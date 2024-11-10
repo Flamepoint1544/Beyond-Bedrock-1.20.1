@@ -1,5 +1,6 @@
 package flamepoint1544.beyond_bedrock;
 
+import flamepoint1544.beyond_bedrock.Items.MortarPestal;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.ArmorItem;
@@ -13,6 +14,7 @@ import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ShearsItem;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
+import net.minecraft.item.ToolMaterials;
 import net.minecraft.item.ArmorItem.Type;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -22,10 +24,18 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
 public class ModItems {
+    // tools
+    public static final Item MORTAR_F = register(new MortarPestal(new Item.Settings(), 25, BBToolMaterials.FLINT), "mortar_pestal_flint");
+    public static final Item MORTAR_G = register(new MortarPestal(new Item.Settings(), 25, ToolMaterials.GOLD), "mortar_pestal_gold");
+    public static final Item MORTAR_I = register(new MortarPestal(new Item.Settings(), 50, ToolMaterials.IRON), "mortar_pestal_iron");
+    public static final Item MORTAR_D = register(new MortarPestal(new Item.Settings(), 75, ToolMaterials.DIAMOND), "mortar_pestal_diamond");
+    public static final Item MORTAR_N = register(new MortarPestal(new Item.Settings(), 100, ToolMaterials.NETHERITE), "mortar_pestal_netherite");
+
     // Ultimatium
     public static final Item ULTIMATIUM = register(new Item(new Item.Settings().rarity(Rarity.RARE)), "ultimatium");
     public static final Item ULTIMATIUM_RAW = register(new Item(new Item.Settings().rarity(Rarity.RARE)), "ultimatium_raw");
     public static final Item ULTIMATIUM_CORE = register(new Item(new Item.Settings().rarity(Rarity.RARE)), "ultimatium_core");
+    public static final Item MORTAR_U = register(new MortarPestal(new Item.Settings(), 200, BBToolMaterials.ULTIMATIUM), "mortar_pestal_ultimatium");
     
     // Ultimatium tools
     public static final Item ULTIMATIUM_SWORD = register(new SwordItem(BBToolMaterials.ULTIMATIUM, 3, -2.4f, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_sword");
@@ -59,6 +69,7 @@ public class ModItems {
     public static final Item COPPER_PICKAXE = register(new PickaxeItem(BBToolMaterials.COPPER, 1, 2.8f, new Item.Settings()), "copper_pickaxe");
     public static final Item COPPER_AXE = register(new AxeItem(BBToolMaterials.COPPER, 6, -3.2f, new Item.Settings()), "copper_axe");
     public static final Item COPPER_HOE = register(new HoeItem(BBToolMaterials.COPPER, 0, -3, new Item.Settings()), "copper_hoe");
+    public static final Item MORTAR_C = register(new MortarPestal(new Item.Settings(), 50, BBToolMaterials.COPPER), "mortar_pestal_copper");
 
     // Copper Armor
     public static final Item COPPER_HELMET = register(new ArmorItem(BBArmorMaterials.COPPER, Type.HELMET, new Item.Settings()), "copper_helmet");
@@ -67,6 +78,12 @@ public class ModItems {
     public static final Item COPPER_BOOTS = register(new ArmorItem(BBArmorMaterials.COPPER, Type.BOOTS, new Item.Settings()), "copper_boots");
 
     // Steel
+    public static final Item STEEL_INGOT = register(new Item(new Item.Settings()), "steel_ingot");
+    public static final Item STEEL_BLEND = register(new Item(new Item.Settings()), "steel_blend");
+    public static final Item MORTAR_S = register(new MortarPestal(new Item.Settings(), 75, BBToolMaterials.STEEL), "mortar_pestal_steel");
+
+    // Steel Tools
+    public static final Item STEEL_SWORD = register(new SwordItem(BBToolMaterials.STEEL, 3, -2.4f, new Item.Settings()), "steel_sword");
 
     // Tin
 
@@ -114,7 +131,7 @@ public class ModItems {
 
     // (Lead Ultimatium)
 
-    // Urantium (Uranium Ultimatium)
+    // Ultiranium (Uranium Ultimatium)
 
     // (Nickel Ultimatium)
 

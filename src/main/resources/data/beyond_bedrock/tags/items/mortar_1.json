@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "beyond_bedrock:mortar_pestal_flint",
+        "beyond_bedrock:mortar_pestal_gold",
+        "beyond_bedrock:mortar_pestal_copper"
+    ]
+}
