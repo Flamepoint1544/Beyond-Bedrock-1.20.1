@@ -121,6 +121,8 @@ public class ModItems {
 
     // Electrum (Silver Gold)
 
+    // Rose-Gold (Copper Gold)
+
     // Stelaruim (Steal Ultimatium)
 
     // Coultium (Copper Ultimatium)
@@ -211,6 +213,18 @@ public class ModItems {
             itemGroup.add(NETHERITE_BASE_CHESTPLATE);
             itemGroup.add(NETHERITE_BASE_LEGGINGS);
             itemGroup.add(NETHERITE_BASE_BOOTS);
+            itemGroup.add(MORTAR_F);
+            itemGroup.add(MORTAR_I);
+            itemGroup.add(MORTAR_C);
+            itemGroup.add(MORTAR_G);
+            itemGroup.add(MORTAR_D);
+            itemGroup.add(MORTAR_S);
+            itemGroup.add(MORTAR_N);
+            itemGroup.add(MORTAR_U);
+            itemGroup.add(NETHERITE_BASE_BOOTS);
+            itemGroup.add(STEEL_BLEND);
+            itemGroup.add(STEEL_INGOT);
+            itemGroup.add(STEEL_SWORD);
          });
     }
 }
