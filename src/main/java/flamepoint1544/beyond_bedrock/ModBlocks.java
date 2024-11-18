@@ -2,6 +2,7 @@ package flamepoint1544.beyond_bedrock;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.FallingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -13,6 +14,10 @@ public class ModBlocks {
     public static final Block ULTIMATIUM_ORE = register(new Block(AbstractBlock.Settings.create().luminance((state) -> {return 10;}).requiresTool().hardness(4.5f)), "ultimatium_ore", true);
     public static final Block ULTIMATIUM_RAW = register(new Block(AbstractBlock.Settings.create().luminance((state) -> {return 15;}).hardness(5f).requiresTool()), "ultimatium_raw_block", true); 
     public static final Block ULTIMATIUM = register(new Block(AbstractBlock.Settings.create().luminance((state) -> {return 15;}).hardness(5f).requiresTool()), "ultimatium_block", true);
+
+    // Steel
+    public static final Block STEEL_BLOCK = register(new Block(AbstractBlock.Settings.create()), "steel_block", true);
+    public static final Block STEEL_DUST = register(new FallingBlock(AbstractBlock.Settings.create()), "steel_dust", true);
 
     /******************************************************************
      * +# register(Block block, String id, boolean registerItem): Block

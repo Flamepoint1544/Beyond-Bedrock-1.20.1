@@ -1,6 +1,6 @@
 package flamepoint1544.beyond_bedrock;
 
-import flamepoint1544.beyond_bedrock.Items.MortarPestal;
+import flamepoint1544.beyond_bedrock.Items.MortarPestle;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.ArmorItem;
@@ -24,18 +24,35 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
 public class ModItems {
+    // item stats
+
     // tools
-    public static final Item MORTAR_F = register(new MortarPestal(new Item.Settings(), 25, BBToolMaterials.FLINT), "mortar_pestal_flint");
-    public static final Item MORTAR_G = register(new MortarPestal(new Item.Settings(), 25, ToolMaterials.GOLD), "mortar_pestal_gold");
-    public static final Item MORTAR_I = register(new MortarPestal(new Item.Settings(), 50, ToolMaterials.IRON), "mortar_pestal_iron");
-    public static final Item MORTAR_D = register(new MortarPestal(new Item.Settings(), 75, ToolMaterials.DIAMOND), "mortar_pestal_diamond");
-    public static final Item MORTAR_N = register(new MortarPestal(new Item.Settings(), 100, ToolMaterials.NETHERITE), "mortar_pestal_netherite");
+    // mortar tier 1
+    public static final Item MORTAR_F = register(new MortarPestle(new Item.Settings(), 25, BBToolMaterials.FLINT), "mortar_pestle_flint");
+    public static final Item MORTAR_G = register(new MortarPestle(new Item.Settings(), 10, ToolMaterials.GOLD), "mortar_pestle_gold");
+    
+    // mortar tier 2
+    public static final Item MORTAR_C = register(new MortarPestle(new Item.Settings(), 25, BBToolMaterials.COPPER), "mortar_pestle_copper");
+    public static final Item MORTAR_I = register(new MortarPestle(new Item.Settings(), 50, ToolMaterials.IRON), "mortar_pestle_iron");
+    public static final Item MORTAR_S = register(new MortarPestle(new Item.Settings(), 75, BBToolMaterials.STEEL), "mortar_pestle_steel");
+    
+    // mortar tier 3
+    public static final Item MORTAR_D = register(new MortarPestle(new Item.Settings(), 75, ToolMaterials.DIAMOND), "mortar_pestle_diamond");
+    
+    // mortar tier 4
+    public static final Item MORTAR_N = register(new MortarPestle(new Item.Settings(), 100, ToolMaterials.NETHERITE), "mortar_pestle_netherite");
+    public static final Item MORTAR_U = register(new MortarPestle(new Item.Settings(), 200, BBToolMaterials.ULTIMATIUM), "mortar_pestle_ultimatium");
+
+    // random crafting items
+    public static final Item INFUSED_SUGAR = register(new Item(new Item.Settings()), "infused_sugar");
+    public static final Item RED_DIAMOND = register(new Item(new Item.Settings()), "red_diamond");
+    public static final Item GILDED_STAR = register(new Item(new Item.Settings()), "gilded_star");
+    public static final Item GILDED_STAR_CLUSTER = register(new Item(new Item.Settings()), "gilded_star_cluster");
 
     // Ultimatium
     public static final Item ULTIMATIUM = register(new Item(new Item.Settings().rarity(Rarity.RARE)), "ultimatium");
     public static final Item ULTIMATIUM_RAW = register(new Item(new Item.Settings().rarity(Rarity.RARE)), "ultimatium_raw");
     public static final Item ULTIMATIUM_CORE = register(new Item(new Item.Settings().rarity(Rarity.RARE)), "ultimatium_core");
-    public static final Item MORTAR_U = register(new MortarPestal(new Item.Settings(), 200, BBToolMaterials.ULTIMATIUM), "mortar_pestal_ultimatium");
     
     // Ultimatium tools
     public static final Item ULTIMATIUM_SWORD = register(new SwordItem(BBToolMaterials.ULTIMATIUM, 3, -2.4f, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_sword");
@@ -69,7 +86,6 @@ public class ModItems {
     public static final Item COPPER_PICKAXE = register(new PickaxeItem(BBToolMaterials.COPPER, 1, 2.8f, new Item.Settings()), "copper_pickaxe");
     public static final Item COPPER_AXE = register(new AxeItem(BBToolMaterials.COPPER, 6, -3.2f, new Item.Settings()), "copper_axe");
     public static final Item COPPER_HOE = register(new HoeItem(BBToolMaterials.COPPER, 0, -3, new Item.Settings()), "copper_hoe");
-    public static final Item MORTAR_C = register(new MortarPestal(new Item.Settings(), 50, BBToolMaterials.COPPER), "mortar_pestal_copper");
 
     // Copper Armor
     public static final Item COPPER_HELMET = register(new ArmorItem(BBArmorMaterials.COPPER, Type.HELMET, new Item.Settings()), "copper_helmet");
@@ -80,10 +96,11 @@ public class ModItems {
     // Steel
     public static final Item STEEL_INGOT = register(new Item(new Item.Settings()), "steel_ingot");
     public static final Item STEEL_BLEND = register(new Item(new Item.Settings()), "steel_blend");
-    public static final Item MORTAR_S = register(new MortarPestal(new Item.Settings(), 75, BBToolMaterials.STEEL), "mortar_pestal_steel");
+    public static final Item IRON_DUST = register(new Item(new Item.Settings()), null);
 
     // Steel Tools
     public static final Item STEEL_SWORD = register(new SwordItem(BBToolMaterials.STEEL, 3, -2.4f, new Item.Settings()), "steel_sword");
+    public static final Item STEEL_SHOVEL = register(new ShovelItem(BBToolMaterials.STEEL, 1.5f, -3, new Item.Settings()), "steel_shovel");
 
     // Tin
 
@@ -221,9 +238,14 @@ public class ModItems {
             itemGroup.add(MORTAR_S);
             itemGroup.add(MORTAR_N);
             itemGroup.add(MORTAR_U);
-            itemGroup.add(NETHERITE_BASE_BOOTS);
+            itemGroup.add(INFUSED_SUGAR);
+            itemGroup.add(RED_DIAMOND);
+            itemGroup.add(GILDED_STAR);
+            itemGroup.add(GILDED_STAR_CLUSTER);
             itemGroup.add(STEEL_BLEND);
             itemGroup.add(STEEL_INGOT);
+            itemGroup.add(ModBlocks.STEEL_BLOCK);
+            itemGroup.add(ModBlocks.STEEL_DUST);
             itemGroup.add(STEEL_SWORD);
          });
     }

@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "beyond_bedrock:mortar_pestle_flint",
+        "beyond_bedrock:mortar_pestle_gold",
+        "#c:mortar_2"
+    ]
+}

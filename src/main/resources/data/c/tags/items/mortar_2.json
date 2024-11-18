@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "beyond_bedrock:mortar_pestle_copper",
+        "beyond_bedrock:mortar_pestle_iron",
+        "beyond_bedrock:mortar_pestle_steel",
+        "#c:mortar_3"
+    ]
+}

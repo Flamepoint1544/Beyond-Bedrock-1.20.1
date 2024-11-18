@@ -2,35 +2,70 @@
     "item.beyond_bedrock.ultimatium": "Ultimatium Crystal",
     "item.beyond_bedrock.ultimatium_raw": "Raw Ultimatium Crystal",
     "item.beyond_bedrock.ultimatium_core": "Ultimatium Core",
+
+    "block.beyond_bedrock.ultimatium_block": "Ultimatium Crystal Block",
+    "block.beyond_bedrock.ultimatium_ore": "Ultimatium Ore",
+    "block.beyond_bedrock.ultimatium_raw_block": "Raw Ultimatium Crystal Block",
+
     "item.beyond_bedrock.ultimatium_sword": "Ultimatium Sword",
     "item.beyond_bedrock.ultimatium_shovel": "Ultimatium Shovel",
     "item.beyond_bedrock.ultimatium_pickaxe": "Ultimatium Pickaxe",
     "item.beyond_bedrock.ultimatium_axe": "Ultimatium Axe",
     "item.beyond_bedrock.ultimatium_hoe": "Ultimatium Hoe",
     "item.beyond_bedrock.ultimatium_shears": "Ultimatium Shears",
+
     "item.beyond_bedrock.ultimatium_helmet": "Ultimatium Helmet",
     "item.beyond_bedrock.ultimatium_chestplate": "Ultimatium Chestplate",
     "item.beyond_bedrock.ultimatium_leggings": "Ultimatium Leggings",
     "item.beyond_bedrock.ultimatium_boots": "Ultimatium Boots",
+
+
     "item.beyond_bedrock.netherite_frame_helmet": "Netherite Frame Helmet",
     "item.beyond_bedrock.netherite_frame_chestplate": "Netherite Frame Chestplate",
     "item.beyond_bedrock.netherite_frame_leggings": "Netherite Frame Leggings",
     "item.beyond_bedrock.netherite_frame_boots": "Netherite Frame Boots",
+
     "item.beyond_bedrock.netherite_base_helmet": "Netherite Base Helmet",
     "item.beyond_bedrock.netherite_base_chestplate": "Netherite Base Chestplate",
     "item.beyond_bedrock.netherite_base_leggings": "Netherite Base Leggings",
     "item.beyond_bedrock.netherite_base_boots": "Netherite Base Boots",
+
+
     "item.beyond_bedrock.copper_sword": "Copper Sword",
     "item.beyond_bedrock.copper_shovel": "Copper Shovel",
     "item.beyond_bedrock.copper_pickaxe": "Copper Pickaxe",
     "item.beyond_bedrock.copper_axe": "Copper Axe",
     "item.beyond_bedrock.copper_hoe": "Copper Hoe",
+
     "item.beyond_bedrock.copper_helmet": "Copper Helmet",
     "item.beyond_bedrock.copper_chestplate": "Copper Chestplate",
     "item.beyond_bedrock.copper_leggings": "Copper Leggings",
     "item.beyond_bedrock.copper_boots": "Copper Boots",
-    "block.beyond_bedrock.ultimatium_block": "Ultimatium Crystal Block",
-    "block.beyond_bedrock.ultimatium_ore": "Ultimatium Ore",
-    "block.beyond_bedrock.ultimatium_raw_block": "Raw Ultimatium Crystal Block",
+
+
+    "item.beyond_bedrock.mortar_pestle_flint": "Flint Mortar and Pestle",
+    "item.beyond_bedrock.mortar_pestle_iron": "Iron Mortar and Pestle",
+    "item.beyond_bedrock.mortar_pestle_copper": "Copper Mortar and Pestle",
+    "item.beyond_bedrock.mortar_pestle_gold": "Gold Mortar and Pestle",
+    "item.beyond_bedrock.mortar_pestle_diamond": "Diamond Mortar and Pestle",
+    "item.beyond_bedrock.mortar_pestle_steel": "Steel Mortar and Pestle",
+    "item.beyond_bedrock.mortar_pestle_netherite": "Netherite Mortar and Pestle",
+    "item.beyond_bedrock.mortar_pestle_ultimatium": "Ultimatium Mortar and Pestle",
+
+
+    "item.beyond_bedrock.infused_sugar": "Redstone Infused Sugar",
+    "item.beyond_bedrock.red_diamond": "Redstone Diamond",
+    "item.beyond_bedrock.gilded_star": "Gilded Nether Star",
+    "item.beyond_bedrock.gilded_star_cluster": "Gilded Nether Star Cluster",
+
+
+    "item.beyond_bedrock.steel_blend": "Steel Blend",
+    "item.beyond_bedrock.steel_ingot": "Steel Ingot",
+
+    "block.beyond_bedrock.steel_block": "Block of Steel",
+    "block.beyond_bedrock.steel_dust": "Steel Dust Block",
+
+    "item.beyond_bedrock.steel_sword": "Steel Sword",
+
     "itemGroup.beyond_bedrock.primary_item_group": "Beyond Bedrock"
 }

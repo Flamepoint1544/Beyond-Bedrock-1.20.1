@@ -4,10 +4,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
 
-public class MortarPestal extends Item{
+public class MortarPestle extends Item{
     private final ToolMaterial material;
 
-    public MortarPestal(Settings settings, int maxDamage, ToolMaterial material) {
+    public MortarPestle(Settings settings, int maxDamage, ToolMaterial material) {
         super(settings.maxDamage(maxDamage));
         this.material = material;
     }
