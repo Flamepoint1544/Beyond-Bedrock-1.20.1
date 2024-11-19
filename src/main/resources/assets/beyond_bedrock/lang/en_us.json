@@ -61,11 +61,25 @@
 
     "item.beyond_bedrock.steel_blend": "Steel Blend",
     "item.beyond_bedrock.steel_ingot": "Steel Ingot",
+    "item.beyond_bedrock.crushed_iron": "Crushed Iron",
+    "item.beyond_bedrock.crushed_coal": "Crushed Coal",
 
     "block.beyond_bedrock.steel_block": "Block of Steel",
-    "block.beyond_bedrock.steel_dust": "Steel Dust Block",
+    "block.beyond_bedrock.steel_dust": "Block of Steel Dust",
+    "block.beyond_bedrock.iron_dust": "Block of Iron Dust",
+    "block.beyond_bedrock.coal_dust": "Block of Coal Dust",
 
     "item.beyond_bedrock.steel_sword": "Steel Sword",
+    "item.beyond_bedrock.steel_shovel": "Steel Shovel",
+    "item.beyond_bedrock.steel_pickaxe": "Steel Pickaxe",
+    "item.beyond_bedrock.steel_axe": "Steel Axe",
+    "item.beyond_bedrock.steel_hoe": "Steel Hoe",
+    "item.beyond_bedrock.steel_shear": "Steel Shears",
+
+    "item.beyond_bedrock.steel_helmet": "Steel Helmet",
+    "item.beyond_bedrock.steel_chestplate": "Steel Chestplate",
+    "item.beyond_bedrock.steel_leggings": "Steel Leggings",
+    "item.beyond_bedrock.steel_boots": "Steel Boots",
 
     "itemGroup.beyond_bedrock.primary_item_group": "Beyond Bedrock"
 }

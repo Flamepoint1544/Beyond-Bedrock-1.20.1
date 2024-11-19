@@ -7,6 +7,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
@@ -16,8 +17,10 @@ public class ModBlocks {
     public static final Block ULTIMATIUM = register(new Block(AbstractBlock.Settings.create().luminance((state) -> {return 15;}).hardness(5f).requiresTool()), "ultimatium_block", true);
 
     // Steel
-    public static final Block STEEL_BLOCK = register(new Block(AbstractBlock.Settings.create()), "steel_block", true);
-    public static final Block STEEL_DUST = register(new FallingBlock(AbstractBlock.Settings.create()), "steel_dust", true);
+    public static final Block STEEL_BLOCK = register(new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.METAL)), "steel_block", true);
+    public static final Block STEEL_DUST = register(new FallingBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.SAND)), "steel_dust", true);
+    public static final Block IRON_DUST = register(new FallingBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.SAND)), "iron_dust", true);
+    public static final Block COAL_DUST = register(new FallingBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.SAND)), "coal_dust", true);
 
     /******************************************************************
      * +# register(Block block, String id, boolean registerItem): Block

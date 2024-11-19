@@ -25,6 +25,25 @@ import net.minecraft.util.Rarity;
 
 public class ModItems {
     // item stats
+    // sword
+    public static final int swordDamage = 3;
+    public static final float swordSpeed = -2.4f;
+
+    // shovel
+    public static final float shovelDamage = 1.5f;
+    public static final float shovelSpeed = -3;
+
+    // pickaxe
+    public static final int pickaxeDamage = 1;
+    public static final float pickaxeSpeed = 2.8f;
+
+    // Axe
+    public static final int axeDamage = 6;
+    public static final float axeSpeed = -3.2f;
+
+    // Hoe
+    public static final int hoeDamage = 0;
+    public static final float hoeSpeed = -3;
 
     // tools
     // mortar tier 1
@@ -55,11 +74,11 @@ public class ModItems {
     public static final Item ULTIMATIUM_CORE = register(new Item(new Item.Settings().rarity(Rarity.RARE)), "ultimatium_core");
     
     // Ultimatium tools
-    public static final Item ULTIMATIUM_SWORD = register(new SwordItem(BBToolMaterials.ULTIMATIUM, 3, -2.4f, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_sword");
-    public static final Item ULTIMATIUM_SHOVEL = register(new ShovelItem(BBToolMaterials.ULTIMATIUM, 1.5f, -3, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_shovel");
-    public static final Item ULTIMATIUM_PICKAXE = register(new PickaxeItem(BBToolMaterials.ULTIMATIUM, 1, 2.8f, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_pickaxe");
-    public static final Item ULTIMATIUM_AXE = register(new AxeItem(BBToolMaterials.ULTIMATIUM, 6, -3.2f, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_axe");
-    public static final Item ULTIMATIUM_HOE = register(new HoeItem(BBToolMaterials.ULTIMATIUM, 0, -3, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_hoe");
+    public static final Item ULTIMATIUM_SWORD = register(new SwordItem(BBToolMaterials.ULTIMATIUM, swordDamage, swordSpeed, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_sword");
+    public static final Item ULTIMATIUM_SHOVEL = register(new ShovelItem(BBToolMaterials.ULTIMATIUM, shovelDamage, shovelSpeed, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_shovel");
+    public static final Item ULTIMATIUM_PICKAXE = register(new PickaxeItem(BBToolMaterials.ULTIMATIUM, pickaxeDamage, pickaxeSpeed, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_pickaxe");
+    public static final Item ULTIMATIUM_AXE = register(new AxeItem(BBToolMaterials.ULTIMATIUM, axeDamage, axeSpeed, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_axe");
+    public static final Item ULTIMATIUM_HOE = register(new HoeItem(BBToolMaterials.ULTIMATIUM, hoeDamage, hoeSpeed, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_hoe");
     public static final Item ULTIMATIUM_SHEAR = register(new ShearsItem(new Item.Settings().maxDamage(4062).rarity(Rarity.EPIC)), "ultimatium_shears");
 
     // Ultimatium Armor
@@ -81,11 +100,11 @@ public class ModItems {
     public static final Item NETHERITE_BASE_BOOTS = register(new Item(new Item.Settings()), "netherite_base_boots");
 
     // Copper Tools
-    public static final Item COPPER_SWORD = register(new SwordItem(BBToolMaterials.COPPER, 3, -2.4f, new Item.Settings()), "copper_sword");
-    public static final Item COPPER_SHOVEL = register(new ShovelItem(BBToolMaterials.COPPER, 1.5f, -3, new Item.Settings()), "copper_shovel");
-    public static final Item COPPER_PICKAXE = register(new PickaxeItem(BBToolMaterials.COPPER, 1, 2.8f, new Item.Settings()), "copper_pickaxe");
-    public static final Item COPPER_AXE = register(new AxeItem(BBToolMaterials.COPPER, 6, -3.2f, new Item.Settings()), "copper_axe");
-    public static final Item COPPER_HOE = register(new HoeItem(BBToolMaterials.COPPER, 0, -3, new Item.Settings()), "copper_hoe");
+    public static final Item COPPER_SWORD = register(new SwordItem(BBToolMaterials.COPPER, swordDamage, swordSpeed, new Item.Settings()), "copper_sword");
+    public static final Item COPPER_SHOVEL = register(new ShovelItem(BBToolMaterials.COPPER, shovelDamage, shovelSpeed, new Item.Settings()), "copper_shovel");
+    public static final Item COPPER_PICKAXE = register(new PickaxeItem(BBToolMaterials.COPPER, pickaxeDamage, pickaxeSpeed, new Item.Settings()), "copper_pickaxe");
+    public static final Item COPPER_AXE = register(new AxeItem(BBToolMaterials.COPPER, axeDamage, axeSpeed, new Item.Settings()), "copper_axe");
+    public static final Item COPPER_HOE = register(new HoeItem(BBToolMaterials.COPPER, hoeDamage, hoeDamage, new Item.Settings()), "copper_hoe");
 
     // Copper Armor
     public static final Item COPPER_HELMET = register(new ArmorItem(BBArmorMaterials.COPPER, Type.HELMET, new Item.Settings()), "copper_helmet");
@@ -96,11 +115,22 @@ public class ModItems {
     // Steel
     public static final Item STEEL_INGOT = register(new Item(new Item.Settings()), "steel_ingot");
     public static final Item STEEL_BLEND = register(new Item(new Item.Settings()), "steel_blend");
-    public static final Item IRON_DUST = register(new Item(new Item.Settings()), null);
+    public static final Item CRUSHED_IRON = register(new Item(new Item.Settings()), "crushed_iron");
+    public static final Item CRUSHED_COAL = register(new Item(new Item.Settings()), "crushed_coal");
 
     // Steel Tools
-    public static final Item STEEL_SWORD = register(new SwordItem(BBToolMaterials.STEEL, 3, -2.4f, new Item.Settings()), "steel_sword");
-    public static final Item STEEL_SHOVEL = register(new ShovelItem(BBToolMaterials.STEEL, 1.5f, -3, new Item.Settings()), "steel_shovel");
+    public static final Item STEEL_SWORD = register(new SwordItem(BBToolMaterials.STEEL, swordDamage, swordSpeed, new Item.Settings()), "steel_sword");
+    public static final Item STEEL_SHOVEL = register(new ShovelItem(BBToolMaterials.STEEL, shovelDamage, shovelSpeed, new Item.Settings()), "steel_shovel");
+    public static final Item STEEL_PICKAXE = register(new PickaxeItem(BBToolMaterials.STEEL, pickaxeDamage, pickaxeSpeed, new Item.Settings()), "steel_pickaxe");
+    public static final Item STEEL_AXE = register(new AxeItem(BBToolMaterials.STEEL, axeDamage, axeSpeed, new Item.Settings()), "steel_axe");
+    public static final Item STEEL_HOE = register(new HoeItem(BBToolMaterials.STEEL, axeDamage, axeSpeed, new Item.Settings()), "steel_hoe");
+    public static final Item STEEL_SHEAR = register(new ShearsItem(new Item.Settings().maxDamage(476)), "steel_shear");
+
+    // Steel armor
+    public static final Item STEEL_HELMET = register(new ArmorItem(BBArmorMaterials.STEEL, Type.HELMET, new Item.Settings()), "steel_helmet");
+    public static final Item STEEL_CHESTPLATE = register(new ArmorItem(BBArmorMaterials.STEEL, Type.CHESTPLATE, new Item.Settings()), "steel_chestplate");
+    public static final Item STEEL_LEGGINGS = register(new ArmorItem(BBArmorMaterials.STEEL, Type.LEGGINGS, new Item.Settings()), "steel_leggings");
+    public static final Item STEEL_BOOTS = register(new ArmorItem(BBArmorMaterials.STEEL, Type.BOOTS, new Item.Settings()), "steel_boots");
 
     // Tin
 
@@ -244,9 +274,18 @@ public class ModItems {
             itemGroup.add(GILDED_STAR_CLUSTER);
             itemGroup.add(STEEL_BLEND);
             itemGroup.add(STEEL_INGOT);
+            itemGroup.add(CRUSHED_IRON);
+            itemGroup.add(CRUSHED_COAL);
             itemGroup.add(ModBlocks.STEEL_BLOCK);
             itemGroup.add(ModBlocks.STEEL_DUST);
+            itemGroup.add(ModBlocks.IRON_DUST);
+            itemGroup.add(ModBlocks.COAL_DUST);
             itemGroup.add(STEEL_SWORD);
+            itemGroup.add(STEEL_SHOVEL);
+            itemGroup.add(STEEL_PICKAXE);
+            itemGroup.add(STEEL_AXE);
+            itemGroup.add(STEEL_HOE);
+            itemGroup.add(STEEL_SHEAR);
          });
     }
 }

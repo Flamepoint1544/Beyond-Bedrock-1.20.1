@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "#/#",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:sugar"
+        },
+        "/": {
+            "item": "minecraft:redstone"
+        }
+    },
+    "result": {
+        "item": "beyond_bedrock:infused_sugar",
+        "count": 3
+    }
+}

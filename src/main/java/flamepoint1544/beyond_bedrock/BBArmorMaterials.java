@@ -33,7 +33,16 @@ public enum BBArmorMaterials implements StringIdentifiable, ArmorMaterial {
       map.put(Type.HELMET, 2);
     }), 13, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0, 0, () -> {
       return Ingredient.ofItems(new ItemConvertible[]{Items.COPPER_INGOT});
-    });
+    }),
+    @SuppressWarnings({ "unchecked", "rawtypes" })
+   STEEL("steel", 20, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
+      map.put(Type.BOOTS, 2);
+      map.put(Type.LEGGINGS, 5);
+      map.put(Type.CHESTPLATE, 6);
+      map.put(Type.HELMET, 2);
+   }), 13, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0, 0, () -> {
+      return Ingredient.ofItems(new ItemConvertible[]{ModItems.STEEL_INGOT});
+   });
 
     @SuppressWarnings("deprecation")
     public static final StringIdentifiable.Codec<BBArmorMaterials> CODEC = StringIdentifiable.createCodec(BBArmorMaterials::values);

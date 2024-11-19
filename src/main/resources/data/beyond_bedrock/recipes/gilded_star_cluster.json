@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "beyond_bedrock:gilded_star"
+        },
+        {
+            "item": "beyond_bedrock:gilded_star"
+        },
+        {
+            "item": "beyond_bedrock:gilded_star"
+        },
+        {
+            "item": "minecraft:netherite_ingot"
+        }
+    ],
+    "result": {
+        "item": "beyond_bedrock:gilded_star_cluster",
+        "count": 1
+    }
+}
