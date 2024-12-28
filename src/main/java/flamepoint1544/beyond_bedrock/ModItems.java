@@ -133,6 +133,21 @@ public class ModItems {
     public static final Item STEEL_BOOTS = register(new ArmorItem(BBArmorMaterials.STEEL, Type.BOOTS, new Item.Settings()), "steel_boots");
 
     // Tin
+    public static final Item TIN_RAW = register(new Item(new Item.Settings()), "raw_tin");
+    public static final Item TIN = register(new Item(new Item.Settings()), "tin_ingot");
+
+    // Tin Tools
+    public static final Item TIN_SWORD = register(new Item(new Item.Settings()), "tin_sword");
+    public static final Item TIN_SHOVEL = register(new Item(new Item.Settings()), "tin_shovel");
+    public static final Item TIN_PICKAXE = register(new Item(new Item.Settings()), "tin_pickaxe");
+    public static final Item TIN_AXE = register(new Item(new Item.Settings()), "tin_axe");
+    public static final Item TIN_HOE = register(new Item(new Item.Settings()), "tin_hoe");
+
+    // Tin Armor
+    public static final Item TIN_HELMET = register(new Item(new Item.Settings()), "tin_helmet");
+    public static final Item TIN_CHESTPLATE = register(new Item(new Item.Settings()), "tin_chestplate");
+    public static final Item TIN_LEGGINGS = register(new Item(new Item.Settings()), "tin_leggings");
+    public static final Item TIN_BOOTS = register(new Item(new Item.Settings()), "tin_boots");
 
     // Silver
 

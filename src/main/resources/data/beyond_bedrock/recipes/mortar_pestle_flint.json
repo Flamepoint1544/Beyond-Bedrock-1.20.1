@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " F ",
+        "#F#",
+        "###"
+    ],
+    "key": {
+        "F": {
+            "item": "minecraft:flint"
+        },
+        "#": {
+            "item": "minecraft:stone"
+        }
+    },
+    "result": {
+        "item": "beyond_bedrock:mortar_pestle_flint",
+        "count": 1
+    }
+}

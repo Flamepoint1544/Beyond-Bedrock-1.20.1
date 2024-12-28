@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " F ",
+        "#F#",
+        "###"
+    ],
+    "key": {
+        "F": {
+            "item": "beyond_bedrock:ultimatium"
+        },
+        "#": {
+            "item": "minecraft:stone"
+        }
+    },
+    "result": {
+        "item": "beyond_bedrock:mortar_pestle_ultimatium",
+        "count": 1
+    }
+}

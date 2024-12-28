@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " F ",
+        "#F#",
+        "###"
+    ],
+    "key": {
+        "F": {
+            "item": "minecraft:copper_ingot"
+        },
+        "#": {
+            "item": "minecraft:stone"
+        }
+    },
+    "result": {
+        "item": "beyond_bedrock:mortar_pestle_copper",
+        "count": 1
+    }
+}
