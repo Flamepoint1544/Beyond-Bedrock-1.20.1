@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "beyond_bedrock:ultimatium"
+        "beyond_bedrock:ultimatium",
+        "beyond_bedrock:steel_ingot"
     ]
 }
