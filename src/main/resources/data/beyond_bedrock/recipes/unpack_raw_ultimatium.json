@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "beyond_bedrock:ultimatium_raw_block"
+        }
+    ],
+    "result": {
+        "item": "beyond_bedrock:ultimatium_raw",
+        "count": 9
+    }
+}

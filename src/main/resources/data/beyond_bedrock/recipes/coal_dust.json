@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "beyond_bedrock:crushed_coal"
+        }
+    },
+    "result": {
+        "item": "beyond_bedrock:coal_dust",
+        "count": 1
+    }
+}

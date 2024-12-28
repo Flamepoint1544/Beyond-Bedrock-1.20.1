@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "beyond_bedrock:iron_dust"
+        }
+    ],
+    "result": {
+        "item": "beyond_bedrock:crushed_iron",
+        "count": 9
+    }
+}

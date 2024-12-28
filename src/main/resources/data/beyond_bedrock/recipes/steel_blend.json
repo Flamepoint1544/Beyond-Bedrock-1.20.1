@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "beyond_bedrock:crushed_iron"
+        },
+        {
+            "item": "beyond_bedrock:crushed_coal"
+        },
+        {
+            "item": "beyond_bedrock:crushed_coal"
+        }
+    ],
+    "result": {
+        "item": "beyond_bedrock:steel_blend",
+        "count": 1
+    }
+}

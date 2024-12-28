@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "beyond_bedrock:coal_dust"
+        }
+    ],
+    "result": {
+        "item": "beyond_bedrock:crushed_coal",
+        "count": 9
+    }
+}
