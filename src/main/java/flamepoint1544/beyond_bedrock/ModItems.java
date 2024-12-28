@@ -286,6 +286,10 @@ public class ModItems {
             itemGroup.add(STEEL_AXE);
             itemGroup.add(STEEL_HOE);
             itemGroup.add(STEEL_SHEAR);
+            itemGroup.add(STEEL_HELMET);
+            itemGroup.add(STEEL_CHESTPLATE);
+            itemGroup.add(STEEL_LEGGINGS);
+            itemGroup.add(STEEL_BOOTS);
          });
     }
 }
