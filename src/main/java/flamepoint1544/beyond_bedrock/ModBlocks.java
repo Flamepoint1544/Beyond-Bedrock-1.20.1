@@ -37,21 +37,25 @@ public class ModBlocks {
         .sounds(BlockSoundGroup.METAL)
         .requiresTool()
         .strength(5.0F, 6.0F)
+        .mapColor(MapColor.DEEPSLATE_GRAY)
     ), "steel_block", true);
     public static final Block STEEL_DUST = register(new FallingBlock(AbstractBlock.Settings.create()
         .sounds(BlockSoundGroup.SAND)
         .requiresTool()
         .strength(4.0F, 5.0F)
+        .mapColor(MapColor.DEEPSLATE_GRAY)
     ), "steel_dust", true);
     public static final Block IRON_DUST = register(new FallingBlock(AbstractBlock.Settings.create()
         .sounds(BlockSoundGroup.SAND)
         .requiresTool()
         .strength(4.0F, 5.0F)
+        .mapColor(MapColor.WHITE_GRAY)
     ), "iron_dust", true);
     public static final Block COAL_DUST = register(new FallingBlock(AbstractBlock.Settings.create()
         .sounds(BlockSoundGroup.SAND)
         .requiresTool()
         .strength(4.0F, 5.0F)
+        .mapColor(MapColor.BLACK)
     ), "coal_dust", true);
 
     // Tin
