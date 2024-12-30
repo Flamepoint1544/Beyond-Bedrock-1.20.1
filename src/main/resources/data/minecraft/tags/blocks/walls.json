@@ -1,6 +1,9 @@
 {
     "replace": false,
     "values": [
-        "beyond_bedrock:cracked_stone_brick_wall"
+        "beyond_bedrock:cracked_stone_brick_wall",
+        "beyond_bedrock:chiseled_stone_wall",
+        "beyond_bedrock:stone_wall",
+        "beyond_bedrock:smooth_stone_wall"
     ]
 }

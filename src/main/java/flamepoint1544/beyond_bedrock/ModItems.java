@@ -340,9 +340,15 @@ public class ModItems {
             itemGroup.add(GILDED_STAR_CLUSTER);
 
             // Stone varients
+            itemGroup.add(ModBlocks.STONE_WALL);
+            // Cracked stone bricks
             itemGroup.add(ModBlocks.CRACKED_STONE_BRICK_STAIR);
             itemGroup.add(ModBlocks.CRACKED_STONE_BRICK_SLAB);
             itemGroup.add(ModBlocks.CRACKED_STONE_BRICK_WALL);
+            // Chiseled Stone
+            itemGroup.add(ModBlocks.CHISELED_STONE_STAIR);
+            itemGroup.add(ModBlocks.CHISELED_STONE_SLAB);
+            itemGroup.add(ModBlocks.CHISELED_STONE_WALL);
          });
     }
 }

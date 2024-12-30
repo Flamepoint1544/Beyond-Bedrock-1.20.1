@@ -84,6 +84,13 @@ public class ModBlocks {
     ), "tin_raw_block", true);
 
     // Stone
+    public static final Block STONE_WALL = register(new WallBlock(AbstractBlock.Settings.create()
+    .mapColor(MapColor.STONE_GRAY)
+    .instrument(Instrument.BASEDRUM)
+    .requiresTool()
+    .strength(1.5F, 6.0F)
+    ), "stone_wall", true);
+    // Cracked Bricks
     public static final Block CRACKED_STONE_BRICK_STAIR = register(new StairsBlock(Blocks.CRACKED_STONE_BRICKS.getDefaultState(), 
         AbstractBlock.Settings.create()
         .mapColor(MapColor.STONE_GRAY)
@@ -103,6 +110,26 @@ public class ModBlocks {
     .requiresTool()
     .strength(1.5F, 6.0F)
     ), "cracked_stone_brick_wall", true);
+    // Chiseled
+    public static final Block CHISELED_STONE_STAIR = register(new StairsBlock(Blocks.CHISELED_STONE_BRICKS.getDefaultState(), 
+    AbstractBlock.Settings.create()
+    .mapColor(MapColor.STONE_GRAY)
+    .instrument(Instrument.BASEDRUM)
+    .requiresTool()
+    .strength(1.5F, 6.0F)
+    ), "chiseled_stone_stair", true);
+    public static final Block CHISELED_STONE_SLAB = register(new SlabBlock(AbstractBlock.Settings.create()
+    .mapColor(MapColor.STONE_GRAY)
+    .instrument(Instrument.BASEDRUM)
+    .requiresTool()
+    .strength(1.5F, 6.0F)
+    ), "chiseled_stone_slab", true);
+    public static final Block CHISELED_STONE_WALL = register(new WallBlock(AbstractBlock.Settings.create()
+    .mapColor(MapColor.STONE_GRAY)
+    .instrument(Instrument.BASEDRUM)
+    .requiresTool()
+    .strength(1.5F, 6.0F)
+    ), "chiseled_stone_wall", true);
 
     /******************************************************************
      * +# register(Block block, String id, boolean registerItem): Block

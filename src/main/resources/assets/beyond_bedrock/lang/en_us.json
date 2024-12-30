@@ -103,5 +103,11 @@
     "block.beyond_bedrock.cracked_stone_brick_slab": "Cracked Stone Brick Slab",
     "block.beyond_bedrock.cracked_stone_brick_wall": "Cracked Stone Brick Wall",
 
+    "block.beyond_bedrock.chiseled_stone_stair": "Chiseled Stone Stairs",
+    "block.beyond_bedrock.chiseled_stone_slab": "Chiseled Stone Slab",
+    "block.beyond_bedrock.chiseled_stone_wall": "Chiseled Stone Wall",
+
+    "block.beyond_bedrock.stone_wall": "Stone Wall",
+
     "itemGroup.beyond_bedrock.primary_item_group": "Beyond Bedrock"
 }

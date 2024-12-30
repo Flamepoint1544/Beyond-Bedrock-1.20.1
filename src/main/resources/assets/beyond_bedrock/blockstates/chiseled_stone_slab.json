@@ -1,0 +1,13 @@
+{
+    "variants": {
+      "type=bottom": {
+        "model": "beyond_bedrock:block/chiseled_stone/slab/bottom"
+      },
+      "type=double": {
+        "model": "minecraft:block/chiseled_stone_bricks"
+      },
+      "type=top": {
+        "model": "beyond_bedrock:block/chiseled_stone/slab/top"
+      }
+    }
+  }
