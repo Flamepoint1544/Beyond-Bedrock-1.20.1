@@ -242,69 +242,113 @@ public class ModItems {
 
         // add items to registered group
         ItemGroupEvents.modifyEntriesEvent(PRIMARY_GROUP_KEY).register(itemGroup ->{
+            // Ultimatium
             itemGroup.add(ULTIMATIUM);
             itemGroup.add(ULTIMATIUM_RAW);
             itemGroup.add(ULTIMATIUM_CORE);
+            // ultimatium tools
             itemGroup.add(ULTIMATIUM_SWORD);
             itemGroup.add(ULTIMATIUM_PICKAXE);
             itemGroup.add(ULTIMATIUM_AXE);
             itemGroup.add(ULTIMATIUM_SHOVEL);
             itemGroup.add(ULTIMATIUM_HOE);
             itemGroup.add(ULTIMATIUM_SHEAR);
+            // ultimatium armor
             itemGroup.add(ULTIMATIUM_HELMET);
             itemGroup.add(ULTIMATIUM_CHESTPLATE);
             itemGroup.add(ULTIMATIUM_LEGGINGS);
             itemGroup.add(ULTIMATIUM_BOOTS);
+            // ultimatium blocks
             itemGroup.add(ModBlocks.ULTIMATIUM);
             itemGroup.add(ModBlocks.ULTIMATIUM_ORE);
             itemGroup.add(ModBlocks.ULTIMATIUM_RAW);
+
+            // Netherite
+            // netherite frames
+            itemGroup.add(NETHERITE_FRAME_HELMET);
+            itemGroup.add(NETHERITE_FRAME_CHESTPLATE);
+            itemGroup.add(NETHERITE_FRAME_LEGGINGS);
+            itemGroup.add(NETHERITE_FRAME_BOOTS);
+            // netherite base
+            itemGroup.add(NETHERITE_BASE_HELMET);
+            itemGroup.add(NETHERITE_BASE_CHESTPLATE);
+            itemGroup.add(NETHERITE_BASE_LEGGINGS);
+            itemGroup.add(NETHERITE_BASE_BOOTS);
+
+            // Copper
+            // copper tools
             itemGroup.add(COPPER_SWORD);
             itemGroup.add(COPPER_PICKAXE);
             itemGroup.add(COPPER_AXE);
             itemGroup.add(COPPER_SHOVEL);
             itemGroup.add(COPPER_HOE);
+            // copper armor
             itemGroup.add(COPPER_HELMET);
             itemGroup.add(COPPER_CHESTPLATE);
             itemGroup.add(COPPER_LEGGINGS);
             itemGroup.add(COPPER_BOOTS);
-            itemGroup.add(NETHERITE_FRAME_HELMET);
-            itemGroup.add(NETHERITE_FRAME_CHESTPLATE);
-            itemGroup.add(NETHERITE_FRAME_LEGGINGS);
-            itemGroup.add(NETHERITE_FRAME_BOOTS);
-            itemGroup.add(NETHERITE_BASE_HELMET);
-            itemGroup.add(NETHERITE_BASE_CHESTPLATE);
-            itemGroup.add(NETHERITE_BASE_LEGGINGS);
-            itemGroup.add(NETHERITE_BASE_BOOTS);
-            itemGroup.add(MORTAR_F);
-            itemGroup.add(MORTAR_I);
-            itemGroup.add(MORTAR_C);
-            itemGroup.add(MORTAR_G);
-            itemGroup.add(MORTAR_D);
-            itemGroup.add(MORTAR_S);
-            itemGroup.add(MORTAR_N);
-            itemGroup.add(MORTAR_U);
-            itemGroup.add(INFUSED_SUGAR);
-            itemGroup.add(RED_DIAMOND);
-            itemGroup.add(GILDED_STAR);
-            itemGroup.add(GILDED_STAR_CLUSTER);
+
+            // Tin
+            itemGroup.add(TIN);
+            itemGroup.add(TIN_RAW);
+            // Tin Blocks
+            itemGroup.add(ModBlocks.TIN_BLOCK);
+            itemGroup.add(ModBlocks.TIN_ORE);
+            itemGroup.add(ModBlocks.TIN_RAW);
+            // Tin tools
+            itemGroup.add(TIN_SWORD);
+            itemGroup.add(TIN_SHOVEL);
+            itemGroup.add(TIN_PICKAXE);
+            itemGroup.add(TIN_AXE);
+            itemGroup.add(TIN_HOE);
+            // Tin Armor
+            itemGroup.add(TIN_HELMET);
+            itemGroup.add(TIN_CHESTPLATE);
+            itemGroup.add(TIN_LEGGINGS);
+            itemGroup.add(TIN_BOOTS);
+
+            // Steel
             itemGroup.add(STEEL_BLEND);
             itemGroup.add(STEEL_INGOT);
             itemGroup.add(CRUSHED_IRON);
             itemGroup.add(CRUSHED_COAL);
+            // Steel blocks
             itemGroup.add(ModBlocks.STEEL_BLOCK);
             itemGroup.add(ModBlocks.STEEL_DUST);
             itemGroup.add(ModBlocks.IRON_DUST);
             itemGroup.add(ModBlocks.COAL_DUST);
+            // Steel tools
             itemGroup.add(STEEL_SWORD);
             itemGroup.add(STEEL_SHOVEL);
             itemGroup.add(STEEL_PICKAXE);
             itemGroup.add(STEEL_AXE);
             itemGroup.add(STEEL_HOE);
             itemGroup.add(STEEL_SHEAR);
+            // Steel armor
             itemGroup.add(STEEL_HELMET);
             itemGroup.add(STEEL_CHESTPLATE);
             itemGroup.add(STEEL_LEGGINGS);
             itemGroup.add(STEEL_BOOTS);
+
+            // Mortar and Pestles
+            // tier 1
+            itemGroup.add(MORTAR_F);
+            itemGroup.add(MORTAR_G);
+            // tier 2
+            itemGroup.add(MORTAR_I);
+            itemGroup.add(MORTAR_C);
+            itemGroup.add(MORTAR_S);
+            //tier 3
+            itemGroup.add(MORTAR_D);
+            // tier 4
+            itemGroup.add(MORTAR_N);
+            itemGroup.add(MORTAR_U);
+
+            // Misc
+            itemGroup.add(INFUSED_SUGAR);
+            itemGroup.add(RED_DIAMOND);
+            itemGroup.add(GILDED_STAR);
+            itemGroup.add(GILDED_STAR_CLUSTER);
          });
     }
 }
