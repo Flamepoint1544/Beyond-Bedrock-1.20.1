@@ -137,17 +137,17 @@ public class ModItems {
     public static final Item TIN = register(new Item(new Item.Settings()), "tin_ingot");
 
     // Tin Tools
-    public static final Item TIN_SWORD = register(new Item(new Item.Settings()), "tin_sword");
-    public static final Item TIN_SHOVEL = register(new Item(new Item.Settings()), "tin_shovel");
-    public static final Item TIN_PICKAXE = register(new Item(new Item.Settings()), "tin_pickaxe");
-    public static final Item TIN_AXE = register(new Item(new Item.Settings()), "tin_axe");
-    public static final Item TIN_HOE = register(new Item(new Item.Settings()), "tin_hoe");
+    public static final Item TIN_SWORD = register(new SwordItem(BBToolMaterials.TIN, swordDamage, swordSpeed, new Item.Settings()), "tin_sword");
+    public static final Item TIN_SHOVEL = register(new ShovelItem(BBToolMaterials.TIN, shovelDamage, shovelSpeed, new Item.Settings()), "tin_shovel");
+    public static final Item TIN_PICKAXE = register(new PickaxeItem(BBToolMaterials.TIN, pickaxeDamage, pickaxeSpeed, new Item.Settings()), "tin_pickaxe");
+    public static final Item TIN_AXE = register(new AxeItem(BBToolMaterials.TIN, axeDamage, axeSpeed, new Item.Settings()), "tin_axe");
+    public static final Item TIN_HOE = register(new HoeItem(BBToolMaterials.TIN, hoeDamage, hoeSpeed, new Item.Settings()), "tin_hoe");
 
     // Tin Armor
-    public static final Item TIN_HELMET = register(new Item(new Item.Settings()), "tin_helmet");
-    public static final Item TIN_CHESTPLATE = register(new Item(new Item.Settings()), "tin_chestplate");
-    public static final Item TIN_LEGGINGS = register(new Item(new Item.Settings()), "tin_leggings");
-    public static final Item TIN_BOOTS = register(new Item(new Item.Settings()), "tin_boots");
+    public static final Item TIN_HELMET = register(new ArmorItem(BBArmorMaterials.TIN, Type.HELMET, new Item.Settings()), "tin_helmet");
+    public static final Item TIN_CHESTPLATE = register(new ArmorItem(BBArmorMaterials.TIN, Type.CHESTPLATE, new Item.Settings()), "tin_chestplate");
+    public static final Item TIN_LEGGINGS = register(new ArmorItem(BBArmorMaterials.TIN, Type.LEGGINGS, new Item.Settings()), "tin_leggings");
+    public static final Item TIN_BOOTS = register(new ArmorItem(BBArmorMaterials.TIN, Type.BOOTS, new Item.Settings()), "tin_boots");
 
     // Silver
 

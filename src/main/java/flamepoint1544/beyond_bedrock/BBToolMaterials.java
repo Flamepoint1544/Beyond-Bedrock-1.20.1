@@ -19,6 +19,9 @@ public enum BBToolMaterials implements ToolMaterial{
     }),
     STEEL(2, 500, 6.0f, 2.0f, 14, () -> {
         return Ingredient.ofItems(ModItems.STEEL_INGOT);
+    }),
+    TIN(2, 131, 6.0f, 2.0f, 16, () -> {
+        return Ingredient.ofItems(ModItems.TIN);
     });
 
     private final int miningLevel;

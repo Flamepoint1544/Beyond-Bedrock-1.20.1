@@ -22,6 +22,10 @@ public class ModBlocks {
     public static final Block IRON_DUST = register(new FallingBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.SAND)), "iron_dust", true);
     public static final Block COAL_DUST = register(new FallingBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.SAND)), "coal_dust", true);
 
+    // Tin
+    public static final Block TIN_ORE = register(new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.METAL)), "tin_ore", true);
+    public static final Block TIN_BLOCK = register(new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.METAL)), "tin_block", true);
+
     /******************************************************************
      * +# register(Block block, String id, boolean registerItem): Block
      * Registers a block using the string id and the modid defined in the main class to make an identifier.
