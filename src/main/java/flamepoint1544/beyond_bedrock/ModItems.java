@@ -49,15 +49,12 @@ public class ModItems {
     // mortar tier 1
     public static final Item MORTAR_F = register(new MortarPestle(new Item.Settings(), 25, BBToolMaterials.FLINT), "mortar_pestle_flint");
     public static final Item MORTAR_G = register(new MortarPestle(new Item.Settings(), 10, ToolMaterials.GOLD), "mortar_pestle_gold");
-    
     // mortar tier 2
     public static final Item MORTAR_C = register(new MortarPestle(new Item.Settings(), 25, BBToolMaterials.COPPER), "mortar_pestle_copper");
     public static final Item MORTAR_I = register(new MortarPestle(new Item.Settings(), 50, ToolMaterials.IRON), "mortar_pestle_iron");
     public static final Item MORTAR_S = register(new MortarPestle(new Item.Settings(), 75, BBToolMaterials.STEEL), "mortar_pestle_steel");
-    
     // mortar tier 3
     public static final Item MORTAR_D = register(new MortarPestle(new Item.Settings(), 75, ToolMaterials.DIAMOND), "mortar_pestle_diamond");
-    
     // mortar tier 4
     public static final Item MORTAR_N = register(new MortarPestle(new Item.Settings(), 100, ToolMaterials.NETHERITE), "mortar_pestle_netherite");
     public static final Item MORTAR_U = register(new MortarPestle(new Item.Settings(), 200, BBToolMaterials.ULTIMATIUM), "mortar_pestle_ultimatium");
@@ -72,7 +69,6 @@ public class ModItems {
     public static final Item ULTIMATIUM = register(new Item(new Item.Settings().rarity(Rarity.RARE)), "ultimatium");
     public static final Item ULTIMATIUM_RAW = register(new Item(new Item.Settings().rarity(Rarity.RARE)), "ultimatium_raw");
     public static final Item ULTIMATIUM_CORE = register(new Item(new Item.Settings().rarity(Rarity.RARE)), "ultimatium_core");
-    
     // Ultimatium tools
     public static final Item ULTIMATIUM_SWORD = register(new SwordItem(BBToolMaterials.ULTIMATIUM, swordDamage, swordSpeed, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_sword");
     public static final Item ULTIMATIUM_SHOVEL = register(new ShovelItem(BBToolMaterials.ULTIMATIUM, shovelDamage, shovelSpeed, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_shovel");
@@ -80,7 +76,6 @@ public class ModItems {
     public static final Item ULTIMATIUM_AXE = register(new AxeItem(BBToolMaterials.ULTIMATIUM, axeDamage, axeSpeed, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_axe");
     public static final Item ULTIMATIUM_HOE = register(new HoeItem(BBToolMaterials.ULTIMATIUM, hoeDamage, hoeSpeed, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_hoe");
     public static final Item ULTIMATIUM_SHEAR = register(new ShearsItem(new Item.Settings().maxDamage(4062).rarity(Rarity.EPIC)), "ultimatium_shears");
-
     // Ultimatium Armor
     public static final Item ULTIMATIUM_HELMET = register(new ArmorItem(BBArmorMaterials.ULTIMATIUM, Type.HELMET, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_helmet");
     public static final Item ULTIMATIUM_CHESTPLATE = register(new ArmorItem(BBArmorMaterials.ULTIMATIUM, Type.CHESTPLATE, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_chestplate");
@@ -92,7 +87,6 @@ public class ModItems {
     public static final Item NETHERITE_FRAME_CHESTPLATE = register(new Item(new Item.Settings()), "netherite_frame_chestplate");
     public static final Item NETHERITE_FRAME_LEGGINGS = register(new Item(new Item.Settings()), "netherite_frame_leggings");
     public static final Item NETHERITE_FRAME_BOOTS = register(new Item(new Item.Settings()), "netherite_frame_boots");
-
     // Netherite Base
     public static final Item NETHERITE_BASE_HELMET = register(new Item(new Item.Settings()), "netherite_base_helmet");
     public static final Item NETHERITE_BASE_CHESTPLATE = register(new Item(new Item.Settings()), "netherite_base_chestplate");
@@ -105,7 +99,6 @@ public class ModItems {
     public static final Item COPPER_PICKAXE = register(new PickaxeItem(BBToolMaterials.COPPER, pickaxeDamage, pickaxeSpeed, new Item.Settings()), "copper_pickaxe");
     public static final Item COPPER_AXE = register(new AxeItem(BBToolMaterials.COPPER, axeDamage, axeSpeed, new Item.Settings()), "copper_axe");
     public static final Item COPPER_HOE = register(new HoeItem(BBToolMaterials.COPPER, hoeDamage, hoeDamage, new Item.Settings()), "copper_hoe");
-
     // Copper Armor
     public static final Item COPPER_HELMET = register(new ArmorItem(BBArmorMaterials.COPPER, Type.HELMET, new Item.Settings()), "copper_helmet");
     public static final Item COPPER_CHESTPLATE = register(new ArmorItem(BBArmorMaterials.COPPER, Type.CHESTPLATE, new Item.Settings()), "copper_chestplate");
@@ -117,7 +110,6 @@ public class ModItems {
     public static final Item STEEL_BLEND = register(new Item(new Item.Settings()), "steel_blend");
     public static final Item CRUSHED_IRON = register(new Item(new Item.Settings()), "crushed_iron");
     public static final Item CRUSHED_COAL = register(new Item(new Item.Settings()), "crushed_coal");
-
     // Steel Tools
     public static final Item STEEL_SWORD = register(new SwordItem(BBToolMaterials.STEEL, swordDamage, swordSpeed, new Item.Settings()), "steel_sword");
     public static final Item STEEL_SHOVEL = register(new ShovelItem(BBToolMaterials.STEEL, shovelDamage, shovelSpeed, new Item.Settings()), "steel_shovel");
@@ -125,7 +117,6 @@ public class ModItems {
     public static final Item STEEL_AXE = register(new AxeItem(BBToolMaterials.STEEL, axeDamage, axeSpeed, new Item.Settings()), "steel_axe");
     public static final Item STEEL_HOE = register(new HoeItem(BBToolMaterials.STEEL, axeDamage, axeSpeed, new Item.Settings()), "steel_hoe");
     public static final Item STEEL_SHEAR = register(new ShearsItem(new Item.Settings().maxDamage(476)), "steel_shear");
-
     // Steel armor
     public static final Item STEEL_HELMET = register(new ArmorItem(BBArmorMaterials.STEEL, Type.HELMET, new Item.Settings()), "steel_helmet");
     public static final Item STEEL_CHESTPLATE = register(new ArmorItem(BBArmorMaterials.STEEL, Type.CHESTPLATE, new Item.Settings()), "steel_chestplate");
@@ -135,14 +126,12 @@ public class ModItems {
     // Tin
     public static final Item TIN_RAW = register(new Item(new Item.Settings()), "raw_tin");
     public static final Item TIN = register(new Item(new Item.Settings()), "tin_ingot");
-
     // Tin Tools
     public static final Item TIN_SWORD = register(new SwordItem(BBToolMaterials.TIN, swordDamage, swordSpeed, new Item.Settings()), "tin_sword");
     public static final Item TIN_SHOVEL = register(new ShovelItem(BBToolMaterials.TIN, shovelDamage, shovelSpeed, new Item.Settings()), "tin_shovel");
     public static final Item TIN_PICKAXE = register(new PickaxeItem(BBToolMaterials.TIN, pickaxeDamage, pickaxeSpeed, new Item.Settings()), "tin_pickaxe");
     public static final Item TIN_AXE = register(new AxeItem(BBToolMaterials.TIN, axeDamage, axeSpeed, new Item.Settings()), "tin_axe");
     public static final Item TIN_HOE = register(new HoeItem(BBToolMaterials.TIN, hoeDamage, hoeSpeed, new Item.Settings()), "tin_hoe");
-
     // Tin Armor
     public static final Item TIN_HELMET = register(new ArmorItem(BBArmorMaterials.TIN, Type.HELMET, new Item.Settings()), "tin_helmet");
     public static final Item TIN_CHESTPLATE = register(new ArmorItem(BBArmorMaterials.TIN, Type.CHESTPLATE, new Item.Settings()), "tin_chestplate");
