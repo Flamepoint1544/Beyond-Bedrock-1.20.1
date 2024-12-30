@@ -2,8 +2,13 @@ package flamepoint1544.beyond_bedrock;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.FallingBlock;
 import net.minecraft.block.MapColor;
+import net.minecraft.block.SlabBlock;
+import net.minecraft.block.StairsBlock;
+import net.minecraft.block.WallBlock;
+import net.minecraft.block.enums.Instrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -77,6 +82,27 @@ public class ModBlocks {
         .strength(3.0f, 3.0f)
         .mapColor(MapColor.LIGHT_GRAY)
     ), "tin_raw_block", true);
+
+    // Stone
+    public static final Block CRACKED_STONE_BRICK_STAIR = register(new StairsBlock(Blocks.CRACKED_STONE_BRICKS.getDefaultState(), 
+        AbstractBlock.Settings.create()
+        .mapColor(MapColor.STONE_GRAY)
+        .instrument(Instrument.BASEDRUM)
+        .requiresTool()
+        .strength(1.5F, 6.0F)
+    ), "cracked_stone_brick_stairs", true);
+    public static final Block CRACKED_STONE_BRICK_SLAB = register(new SlabBlock(AbstractBlock.Settings.create()
+        .mapColor(MapColor.STONE_GRAY)
+        .instrument(Instrument.BASEDRUM)
+        .requiresTool()
+        .strength(1.5F, 6.0F)
+    ), "cracked_stone_brick_slab", true);
+    public static final Block CRACKED_STONE_BRICK_WALL = register(new WallBlock(AbstractBlock.Settings.create()
+    .mapColor(MapColor.STONE_GRAY)
+    .instrument(Instrument.BASEDRUM)
+    .requiresTool()
+    .strength(1.5F, 6.0F)
+    ), "cracked_stone_brick_wall", true);
 
     /******************************************************************
      * +# register(Block block, String id, boolean registerItem): Block

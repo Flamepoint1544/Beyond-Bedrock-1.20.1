@@ -338,6 +338,11 @@ public class ModItems {
             itemGroup.add(RED_DIAMOND);
             itemGroup.add(GILDED_STAR);
             itemGroup.add(GILDED_STAR_CLUSTER);
+
+            // Stone varients
+            itemGroup.add(ModBlocks.CRACKED_STONE_BRICK_STAIR);
+            itemGroup.add(ModBlocks.CRACKED_STONE_BRICK_SLAB);
+            itemGroup.add(ModBlocks.CRACKED_STONE_BRICK_WALL);
          });
     }
 }
