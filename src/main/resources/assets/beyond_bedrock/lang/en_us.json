@@ -81,5 +81,23 @@
     "item.beyond_bedrock.steel_leggings": "Steel Leggings",
     "item.beyond_bedrock.steel_boots": "Steel Boots",
 
+    "item.beyond_bedrock.tin_block": "Tin Block",
+    "item.beyond_bedrock.tin_raw_block": "Block of Raw Tin",
+    "item.beyond_bedrock.tin_ore": "Tin Ore",
+
+    "item.beyond_bedrock.raw_tin": "Raw Tin",
+    "item.beyond_bedrock.tin_ingot": "Tin Ingot",
+    
+    "item.beyond_bedrock.tin_sword": "Tin Sword",
+    "item.beyond_bedrock.tin_shovel": "Tin Shovel",
+    "item.beyond_bedrock.tin_pickaxe": "Tin Pickaxe",
+    "item.beyond_bedrock.tin_axe": "Tin Axe",
+    "item.beyond_bedrock.tin_hoe": "Tin Hoe",
+
+    "item.beyond_bedrock.tin_helmet": "Tin Helmet",
+    "item.beyond_bedrock.tin_chestplate": "Tin Chestplate",
+    "item.beyond_bedrock.tin_leggings": "Tin Leggings",
+    "item.beyond_bedrock.tin_boots": "Tin Boots",
+
     "itemGroup.beyond_bedrock.primary_item_group": "Beyond Bedrock"
 }
