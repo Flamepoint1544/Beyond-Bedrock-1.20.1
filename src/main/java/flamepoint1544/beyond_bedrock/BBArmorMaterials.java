@@ -18,10 +18,10 @@ import net.minecraft.util.Util;
 public enum BBArmorMaterials implements StringIdentifiable, ArmorMaterial {
     @SuppressWarnings({ "rawtypes", "unchecked" })
     ULTIMATIUM("ultimatium", 45, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 3);
-        map.put(Type.LEGGINGS, 6);
-        map.put(Type.CHESTPLATE, 8);
-        map.put(Type.HELMET, 3);
+        map.put(Type.BOOTS, 6);
+        map.put(Type.LEGGINGS, 12);
+        map.put(Type.CHESTPLATE, 16);
+        map.put(Type.HELMET, 6);
     }), 15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 5.0f, 0.4f, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.ULTIMATIUM});
     }),

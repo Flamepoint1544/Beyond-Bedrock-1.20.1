@@ -1,0 +1,27 @@
+{
+    "feature": "beyond_bedrock:tin",
+    "placement": [
+      {
+        "count": 8,
+        "type": "minecraft:count"
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "height": {
+          "type": "minecraft:trapezoid",
+          "min_inclusive": {
+            "absolute": -24
+          },
+          "max_inclusive": {
+            "absolute": 70
+          }
+        },
+        "type": "minecraft:height_range"
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  }
