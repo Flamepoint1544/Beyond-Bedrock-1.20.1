@@ -3,13 +3,12 @@
 	"id": "beyond_bedrock",
 	"version": "${version}",
 	"name": "Beyond Bedrock",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A mod that adds a large number of ores and alloys. This mod is mostly for the mod \"Flametech\" but can be used by anyone to get their ores from!",
 	"authors": [
-		"Me!"
+		"Flamepoint1544"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Flamepoint1544/Beyond-Bedrock-1.20.1"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/beyond_bedrock/icon.png",
