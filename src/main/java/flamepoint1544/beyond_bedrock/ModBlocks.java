@@ -63,16 +63,19 @@ public class ModBlocks {
         .sounds(BlockSoundGroup.METAL)
         .requiresTool()
         .strength(3.0f, 3.0f)
+        .mapColor(MapColor.LIGHT_GRAY)
     ), "tin_ore", true);
     public static final Block TIN_BLOCK = register(new Block(AbstractBlock.Settings.create()
         .sounds(BlockSoundGroup.METAL)
         .requiresTool()
         .strength(5.0f, 6.0f)
+        .mapColor(MapColor.LIGHT_GRAY)
     ), "tin_block", true);
     public static final Block TIN_RAW = register(new Block(AbstractBlock.Settings.create()
         .sounds(BlockSoundGroup.METAL)
         .requiresTool()
         .strength(3.0f, 3.0f)
+        .mapColor(MapColor.LIGHT_GRAY)
     ), "tin_raw_block", true);
 
     /******************************************************************
