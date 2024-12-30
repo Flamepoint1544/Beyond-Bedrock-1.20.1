@@ -1,0 +1,12 @@
+{
+    "replace": false,
+    "values": [
+        "beyond_bedrock:steel_block",
+        "beyond_bedrock:tin_ore",
+        "beyond_bedrock:tin_block",
+        "beyond_bedrock:tin_raw_block",
+        "beyond_bedrock:steel_dust",
+        "beyond_bedrock:iron_dust",
+        "beyond_bedrock:coal_dust"
+    ]
+}

@@ -8,7 +8,7 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Lazy;
 
 public enum BBToolMaterials implements ToolMaterial{
-    ULTIMATIUM(5, 4062, 10.0f, 5.0f, 25, () ->{
+    ULTIMATIUM(5, 4062, 30.0f, 7.0f, 25, () ->{
         return Ingredient.ofItems(ModItems.ULTIMATIUM);
     }),
     COPPER(2, 131, 6.0f, 2.0f, 16, () ->{

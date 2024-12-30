@@ -12,19 +12,60 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     // Ultimatium
-    public static final Block ULTIMATIUM_ORE = register(new Block(AbstractBlock.Settings.create().luminance((state) -> {return 10;}).requiresTool().hardness(4.5f)), "ultimatium_ore", true);
-    public static final Block ULTIMATIUM_RAW = register(new Block(AbstractBlock.Settings.create().luminance((state) -> {return 15;}).hardness(5f).requiresTool()), "ultimatium_raw_block", true); 
-    public static final Block ULTIMATIUM = register(new Block(AbstractBlock.Settings.create().luminance((state) -> {return 15;}).hardness(5f).requiresTool()), "ultimatium_block", true);
+    public static final Block ULTIMATIUM_ORE = register(new Block(AbstractBlock.Settings.create()
+        .luminance((state) -> {return 10;})
+        .requiresTool()
+        .strength(40.0F, 1200.0F)
+    ), "ultimatium_ore", true);
+    public static final Block ULTIMATIUM_RAW = register(new Block(AbstractBlock.Settings.create()
+        .luminance((state) -> {return 12;})
+        .requiresTool()
+        .strength(40.0F, 1200.0F)
+    ), "ultimatium_raw_block", true); 
+    public static final Block ULTIMATIUM = register(new Block(AbstractBlock.Settings.create()
+        .luminance((state) -> {return 15;})
+        .requiresTool()
+        .strength(60.0F, 1200.0F)
+    ), "ultimatium_block", true);
 
     // Steel
-    public static final Block STEEL_BLOCK = register(new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.METAL)), "steel_block", true);
-    public static final Block STEEL_DUST = register(new FallingBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.SAND)), "steel_dust", true);
-    public static final Block IRON_DUST = register(new FallingBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.SAND)), "iron_dust", true);
-    public static final Block COAL_DUST = register(new FallingBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.SAND)), "coal_dust", true);
+    public static final Block STEEL_BLOCK = register(new Block(AbstractBlock.Settings.create()
+        .sounds(BlockSoundGroup.METAL)
+        .requiresTool()
+        .strength(5.0F, 6.0F)
+    ), "steel_block", true);
+    public static final Block STEEL_DUST = register(new FallingBlock(AbstractBlock.Settings.create()
+        .sounds(BlockSoundGroup.SAND)
+        .requiresTool()
+        .strength(4.0F, 5.0F)
+    ), "steel_dust", true);
+    public static final Block IRON_DUST = register(new FallingBlock(AbstractBlock.Settings.create()
+        .sounds(BlockSoundGroup.SAND)
+        .requiresTool()
+        .strength(4.0F, 5.0F)
+    ), "iron_dust", true);
+    public static final Block COAL_DUST = register(new FallingBlock(AbstractBlock.Settings.create()
+        .sounds(BlockSoundGroup.SAND)
+        .requiresTool()
+        .strength(4.0F, 5.0F)
+    ), "coal_dust", true);
 
     // Tin
-    public static final Block TIN_ORE = register(new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.METAL)), "tin_ore", true);
-    public static final Block TIN_BLOCK = register(new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.METAL)), "tin_block", true);
+    public static final Block TIN_ORE = register(new Block(AbstractBlock.Settings.create()
+        .sounds(BlockSoundGroup.METAL)
+        .requiresTool()
+        .strength(3.0f, 3.0f)
+    ), "tin_ore", true);
+    public static final Block TIN_BLOCK = register(new Block(AbstractBlock.Settings.create()
+        .sounds(BlockSoundGroup.METAL)
+        .requiresTool()
+        .strength(5.0f, 6.0f)
+    ), "tin_block", true);
+    public static final Block TIN_RAW = register(new Block(AbstractBlock.Settings.create()
+        .sounds(BlockSoundGroup.METAL)
+        .requiresTool()
+        .strength(3.0f, 3.0f)
+    ), "tin_raw_block", true);
 
     /******************************************************************
      * +# register(Block block, String id, boolean registerItem): Block
