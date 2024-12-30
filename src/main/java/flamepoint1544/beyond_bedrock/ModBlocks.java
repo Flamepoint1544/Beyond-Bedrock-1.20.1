@@ -3,6 +3,7 @@ package flamepoint1544.beyond_bedrock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.FallingBlock;
+import net.minecraft.block.MapColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -16,16 +17,19 @@ public class ModBlocks {
         .luminance((state) -> {return 10;})
         .requiresTool()
         .strength(40.0F, 1200.0F)
+        .mapColor(MapColor.PALE_YELLOW)
     ), "ultimatium_ore", true);
     public static final Block ULTIMATIUM_RAW = register(new Block(AbstractBlock.Settings.create()
         .luminance((state) -> {return 12;})
         .requiresTool()
         .strength(40.0F, 1200.0F)
+        .mapColor(MapColor.BRIGHT_TEAL)
     ), "ultimatium_raw_block", true); 
     public static final Block ULTIMATIUM = register(new Block(AbstractBlock.Settings.create()
         .luminance((state) -> {return 15;})
         .requiresTool()
         .strength(60.0F, 1200.0F)
+        .mapColor(MapColor.BRIGHT_TEAL)
     ), "ultimatium_block", true);
 
     // Steel
