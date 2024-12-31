@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+      {
+        "rolls": 0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "beyond_bedrock:borderless_glass",
+            "conditions": []
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "enchantments": [
+                {
+                  "enchantment": "minecraft:silk_touch"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }

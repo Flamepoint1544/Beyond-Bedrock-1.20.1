@@ -3,6 +3,6 @@
     "ingredient": {
         "item": "minecraft:cracked_stone_bricks"
     },
-    "result": "beyond_bedrock:cracked_stone_brick_stair",
+    "result": "beyond_bedrock:cracked_stone_brick_stairs",
     "count": 1
 }
