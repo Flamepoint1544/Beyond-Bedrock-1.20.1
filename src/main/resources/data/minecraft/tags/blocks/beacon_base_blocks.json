@@ -6,6 +6,7 @@
         "minecraft:waxed_copper_block",
         "minecraft:lapis_block",
         "minecraft:redstone_block",
-        "beyond_bedrock:steel_block"
+        "beyond_bedrock:steel_block",
+        "beyond_bedrock:tin_block"
     ]
 }
