@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:glass"
+    },
+    "result": "beyond_bedrock:borderless_glass",
+    "count": 1
+}

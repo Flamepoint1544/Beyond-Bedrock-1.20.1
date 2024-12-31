@@ -19,6 +19,9 @@
 		],
 		"fabric-datagen": [
 			"flamepoint1544.beyond_bedrock.BeyondBedrockDataGenerator"
+		],
+		"client": [
+			"flamepoint1544.beyond_bedrock.BeyondBedrockClient"
 		]
 	},
 	"mixins": [

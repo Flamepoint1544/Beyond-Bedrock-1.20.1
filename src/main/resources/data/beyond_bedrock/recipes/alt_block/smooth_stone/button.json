@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:smooth_stone"
+        }
+    ],
+    "result": {
+        "item": "beyond_bedrock:smooth_stone_button",
+        "count": 1
+    }
+}

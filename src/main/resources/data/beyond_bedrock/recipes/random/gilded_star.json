@@ -7,14 +7,14 @@
     ],
     "key": {
         "#": {
-            "item": "beyond_bedrock:infused_sugar"
+            "item": "minecraft:gold_ingot"
         },
         "/": {
-            "item": "minecraft:diamond"
+            "item": "minecraft:nether_star"
         }
     },
     "result": {
-        "item": "beyond_bedrock:red_diamond",
-        "count": 3
+        "item": "beyond_bedrock:gilded_star",
+        "count": 1
     }
 }

@@ -1,7 +1,8 @@
-package flamepoint1544.beyond_bedrock;
+package flamepoint1544.beyond_bedrock.Items;
 
 import java.util.function.Supplier;
 
+import flamepoint1544.beyond_bedrock.ModItems;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;

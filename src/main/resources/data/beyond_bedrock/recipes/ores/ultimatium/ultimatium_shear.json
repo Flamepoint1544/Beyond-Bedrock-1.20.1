@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#N",
+        "/#"
+    ],
+    "key": {
+        "#": {
+            "item": "beyond_bedrock:ultimatium"
+        },
+        "/": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "N": {
+            "item": "minecraft:shears"
+        }
+    },
+    "result": {
+        "item": "beyond_bedrock:ultimatium_shears",
+        "count": 1
+    }
+}

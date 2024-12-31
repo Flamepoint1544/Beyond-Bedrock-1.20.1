@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:cracked_stone_bricks"
+        }
+    },
+    "result": {
+        "item": "beyond_bedrock:cracked_stone_brick_pressure_plate",
+        "count": 1
+    }
+}

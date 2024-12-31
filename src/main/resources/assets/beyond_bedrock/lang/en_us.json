@@ -124,7 +124,9 @@
     "block.beyond_bedrock.smooth_stone_button": "Smooth Stone Button",
     "block.beyond_bedrock.smooth_stone_pressure_plate": "Smooth Stone Pressure Plate",
 
+    "block.beyond_bedrock.borderless_glass": "Borderless Glass",
+
     "itemGroup.beyond_bedrock.primary_item_group": "Beyond Bedrock",
     "itemGroup.beyond_bedrock.equipment_item_group": "Beyond Bedrock [Equipment]",
-    "itemGroup.beyond_bedrock.altstone_item_group": "Beyond Bedrock [Stone Varients]"
+    "itemGroup.beyond_bedrock.altstone_item_group": "Beyond Bedrock [Block Varients]"
 }

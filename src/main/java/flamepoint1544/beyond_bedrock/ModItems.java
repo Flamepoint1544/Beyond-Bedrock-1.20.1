@@ -1,5 +1,7 @@
 package flamepoint1544.beyond_bedrock;
 
+import flamepoint1544.beyond_bedrock.Items.BBArmorMaterials;
+import flamepoint1544.beyond_bedrock.Items.BBToolMaterials;
 import flamepoint1544.beyond_bedrock.Items.MortarPestle;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -353,6 +355,9 @@ public class ModItems {
             itemGroup.add(ModBlocks.SMOOTH_STONE_WALL);
             itemGroup.add(ModBlocks.SMOOTH_STONE_BUTTON);
             itemGroup.add(ModBlocks.SMOOTH_STONE_PRESSURE);
+
+            // Glass
+            itemGroup.add(ModBlocks.BORDERLESS_GLASS);
         });
 
         ItemGroupEvents.modifyEntriesEvent(PRIMARY_GROUP_KEY).register(itemGroup ->{

@@ -6,6 +6,7 @@ import net.minecraft.block.BlockSetType;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.ButtonBlock;
 import net.minecraft.block.FallingBlock;
+import net.minecraft.block.GlassBlock;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.PressurePlateBlock;
 import net.minecraft.block.SlabBlock;
@@ -94,6 +95,7 @@ public class ModBlocks {
     .instrument(Instrument.BASEDRUM)
     .requiresTool()
     .strength(1.5F, 6.0F)
+    .sounds(BlockSoundGroup.STONE)
     ), "stone_wall", true);
     // Bricks
     public static final Block STONE_BRICK_PRESSURE = register(createStonPressurePlate(), "stone_brick_pressure_plate", true);
@@ -108,18 +110,21 @@ public class ModBlocks {
         .instrument(Instrument.BASEDRUM)
         .requiresTool()
         .strength(1.5F, 6.0F)
+        .sounds(BlockSoundGroup.STONE)
     ), "cracked_stone_brick_stairs", true);
     public static final Block CRACKED_STONE_BRICK_SLAB = register(new SlabBlock(AbstractBlock.Settings.create()
         .mapColor(MapColor.STONE_GRAY)
         .instrument(Instrument.BASEDRUM)
         .requiresTool()
         .strength(1.5F, 6.0F)
+        .sounds(BlockSoundGroup.STONE)
     ), "cracked_stone_brick_slab", true);
     public static final Block CRACKED_STONE_BRICK_WALL = register(new WallBlock(AbstractBlock.Settings.create()
     .mapColor(MapColor.STONE_GRAY)
     .instrument(Instrument.BASEDRUM)
     .requiresTool()
     .strength(1.5F, 6.0F)
+    .sounds(BlockSoundGroup.STONE)
     ), "cracked_stone_brick_wall", true);
     public static final Block CRACKED_STONE_BRICK_PRESSURE = register(createStonPressurePlate(), "cracked_stone_brick_pressure_plate", true);
     public static final Block CRACKED_STONE_BRICK_BUTTON = register(createStoneButtonBlock(), "cracked_stone_brick_button", true);
@@ -130,18 +135,21 @@ public class ModBlocks {
     .instrument(Instrument.BASEDRUM)
     .requiresTool()
     .strength(1.5F, 6.0F)
+    .sounds(BlockSoundGroup.STONE)
     ), "chiseled_stone_stair", true);
     public static final Block CHISELED_STONE_SLAB = register(new SlabBlock(AbstractBlock.Settings.create()
     .mapColor(MapColor.STONE_GRAY)
     .instrument(Instrument.BASEDRUM)
     .requiresTool()
     .strength(1.5F, 6.0F)
+    .sounds(BlockSoundGroup.STONE)
     ), "chiseled_stone_slab", true);
     public static final Block CHISELED_STONE_WALL = register(new WallBlock(AbstractBlock.Settings.create()
     .mapColor(MapColor.STONE_GRAY)
     .instrument(Instrument.BASEDRUM)
     .requiresTool()
     .strength(1.5F, 6.0F)
+    .sounds(BlockSoundGroup.STONE)
     ), "chiseled_stone_wall", true);
     public static final Block CHISELED_STONE_PRESSURE = register(createStonPressurePlate(), "chiseled_stone_pressure_plate", true);
     public static final Block CHISELED_STONE_BUTTON = register(createStoneButtonBlock(), "chiseled_stone_button", true);
@@ -152,6 +160,7 @@ public class ModBlocks {
     .instrument(Instrument.BASEDRUM)
     .requiresTool()
     .strength(1.5F, 6.0F)
+    .sounds(BlockSoundGroup.STONE)
     ), "smooth_stone_wall", true);
     public static final Block SMOOTH_STONE_STAIR = register(new StairsBlock(Blocks.SMOOTH_STONE.getDefaultState(), 
     AbstractBlock.Settings.create()
@@ -159,9 +168,22 @@ public class ModBlocks {
     .instrument(Instrument.BASEDRUM)
     .requiresTool()
     .strength(1.5F, 6.0F)
+    .sounds(BlockSoundGroup.STONE)
     ), "smooth_stone_stair", true);
     public static final Block SMOOTH_STONE_PRESSURE = register(createStonPressurePlate(), "smooth_stone_pressure_plate", true);
     public static final Block SMOOTH_STONE_BUTTON = register(createStoneButtonBlock(), "smooth_stone_button", true);
+
+    // Glass
+    public static final Block BORDERLESS_GLASS = register(new GlassBlock(AbstractBlock.Settings.create()
+    .instrument(Instrument.HAT)
+    .strength(0.3F)
+    .sounds(BlockSoundGroup.GLASS)
+    .nonOpaque()
+    .allowsSpawning(Blocks::never)
+    .solidBlock(Blocks::never)
+    .suffocates(Blocks::never)
+    .blockVision(Blocks::never)), 
+    "borderless_glass", true);
 
     /******************************************************************
      * +# register(Block block, String id, boolean registerItem): Block
@@ -200,7 +222,8 @@ public class ModBlocks {
         .requiresTool()
         .noCollision()
         .strength(0.5F)
-        .pistonBehavior(PistonBehavior.DESTROY), 
+        .pistonBehavior(PistonBehavior.DESTROY)
+        .sounds(BlockSoundGroup.STONE), 
         BlockSetType.STONE);
     }
 

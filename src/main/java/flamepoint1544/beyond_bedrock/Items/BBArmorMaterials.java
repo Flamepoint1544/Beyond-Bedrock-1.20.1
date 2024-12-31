@@ -1,8 +1,9 @@
-package flamepoint1544.beyond_bedrock;
+package flamepoint1544.beyond_bedrock.Items;
 
 import java.util.EnumMap;
 import java.util.function.Supplier;
 
+import flamepoint1544.beyond_bedrock.ModItems;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorItem.Type;
 import net.minecraft.item.ArmorMaterial;

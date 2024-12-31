@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "beyond_bedrock:raw_tin"
+    },
+    "result": "beyond_bedrock:tin_ingot",
+    "experience": 1,
+    "cookingtime": 200
+}

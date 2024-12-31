@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "beyond_bedrock:raw_tin"
+        }
+    },
+    "result": {
+        "item": "beyond_bedrock:tin_raw_block"
+    }
+}

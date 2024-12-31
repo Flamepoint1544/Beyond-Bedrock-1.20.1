@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:chiseled_stone_bricks"
+        }
+    ],
+    "result": {
+        "item": "beyond_bedrock:chiseled_stone_button",
+        "count": 1
+    }
+}
