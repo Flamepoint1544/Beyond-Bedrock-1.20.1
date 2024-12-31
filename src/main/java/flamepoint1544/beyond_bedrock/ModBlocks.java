@@ -130,6 +130,21 @@ public class ModBlocks {
     .requiresTool()
     .strength(1.5F, 6.0F)
     ), "chiseled_stone_wall", true);
+    // Gilded
+    // Smooth/polished
+    public static final Block SMOOTH_STONE_WALL = register(new WallBlock(AbstractBlock.Settings.create()
+    .mapColor(MapColor.STONE_GRAY)
+    .instrument(Instrument.BASEDRUM)
+    .requiresTool()
+    .strength(1.5F, 6.0F)
+    ), "smooth_stone_wall", true);
+    public static final Block SMOOTH_STONE_STAIR = register(new StairsBlock(Blocks.SMOOTH_STONE.getDefaultState(), 
+    AbstractBlock.Settings.create()
+    .mapColor(MapColor.STONE_GRAY)
+    .instrument(Instrument.BASEDRUM)
+    .requiresTool()
+    .strength(1.5F, 6.0F)
+    ), "smooth_stone_stair", true);
 
     /******************************************************************
      * +# register(Block block, String id, boolean registerItem): Block

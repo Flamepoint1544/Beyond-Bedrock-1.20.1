@@ -349,6 +349,10 @@ public class ModItems {
             itemGroup.add(ModBlocks.CHISELED_STONE_STAIR);
             itemGroup.add(ModBlocks.CHISELED_STONE_SLAB);
             itemGroup.add(ModBlocks.CHISELED_STONE_WALL);
+            // Gilded Stone
+            // Smooth Stone
+            itemGroup.add(ModBlocks.SMOOTH_STONE_STAIR);
+            itemGroup.add(ModBlocks.SMOOTH_STONE_WALL);
          });
     }
 }

@@ -109,5 +109,8 @@
 
     "block.beyond_bedrock.stone_wall": "Stone Wall",
 
+    "block.beyond_bedrock.smooth_stone_wall": "Smooth Stone Wall",
+    "block.beyond_bedrock.smooth_stone_stair": "Smooth Stone Stairs",
+
     "itemGroup.beyond_bedrock.primary_item_group": "Beyond Bedrock"
 }
