@@ -2,13 +2,18 @@ package flamepoint1544.beyond_bedrock;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockSetType;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.ButtonBlock;
 import net.minecraft.block.FallingBlock;
 import net.minecraft.block.MapColor;
+import net.minecraft.block.PressurePlateBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.StairsBlock;
 import net.minecraft.block.WallBlock;
+import net.minecraft.block.PressurePlateBlock.ActivationRule;
 import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -90,6 +95,12 @@ public class ModBlocks {
     .requiresTool()
     .strength(1.5F, 6.0F)
     ), "stone_wall", true);
+    // Bricks
+    public static final Block STONE_BRICK_PRESSURE = register(createStonPressurePlate(), "stone_brick_pressure_plate", true);
+    public static final Block STONE_BRICK_BUTTON = register(createStoneButtonBlock(), "stone_brick_button", true);
+    // Mossy Bricks
+    public static final Block MOSSY_STONE_BRICK_PRESSURE = register(createStonPressurePlate(), "mossy_stone_brick_pressure_plate", true);
+    public static final Block MOSSY_STONE_BRICK_BUTTON = register(createStoneButtonBlock(), "mossy_stone_brick_button", true);
     // Cracked Bricks
     public static final Block CRACKED_STONE_BRICK_STAIR = register(new StairsBlock(Blocks.CRACKED_STONE_BRICKS.getDefaultState(), 
         AbstractBlock.Settings.create()
@@ -110,6 +121,8 @@ public class ModBlocks {
     .requiresTool()
     .strength(1.5F, 6.0F)
     ), "cracked_stone_brick_wall", true);
+    public static final Block CRACKED_STONE_BRICK_PRESSURE = register(createStonPressurePlate(), "cracked_stone_brick_pressure_plate", true);
+    public static final Block CRACKED_STONE_BRICK_BUTTON = register(createStoneButtonBlock(), "cracked_stone_brick_button", true);
     // Chiseled
     public static final Block CHISELED_STONE_STAIR = register(new StairsBlock(Blocks.CHISELED_STONE_BRICKS.getDefaultState(), 
     AbstractBlock.Settings.create()
@@ -130,6 +143,8 @@ public class ModBlocks {
     .requiresTool()
     .strength(1.5F, 6.0F)
     ), "chiseled_stone_wall", true);
+    public static final Block CHISELED_STONE_PRESSURE = register(createStonPressurePlate(), "chiseled_stone_pressure_plate", true);
+    public static final Block CHISELED_STONE_BUTTON = register(createStoneButtonBlock(), "chiseled_stone_button", true);
     // Gilded
     // Smooth/polished
     public static final Block SMOOTH_STONE_WALL = register(new WallBlock(AbstractBlock.Settings.create()
@@ -145,6 +160,8 @@ public class ModBlocks {
     .requiresTool()
     .strength(1.5F, 6.0F)
     ), "smooth_stone_stair", true);
+    public static final Block SMOOTH_STONE_PRESSURE = register(createStonPressurePlate(), "smooth_stone_pressure_plate", true);
+    public static final Block SMOOTH_STONE_BUTTON = register(createStoneButtonBlock(), "smooth_stone_button", true);
 
     /******************************************************************
      * +# register(Block block, String id, boolean registerItem): Block
@@ -163,6 +180,28 @@ public class ModBlocks {
         }
 
         return Registry.register(Registries.BLOCK, blockID, block);
+    }
+
+    public static ButtonBlock createStoneButtonBlock() {
+        return new ButtonBlock(AbstractBlock.Settings.create()
+        .noCollision()
+        .strength(0.5F)
+        .pistonBehavior(PistonBehavior.DESTROY), 
+        BlockSetType.STONE, 
+        20, 
+        false);
+    }
+
+    public static PressurePlateBlock createStonPressurePlate() {
+        return new PressurePlateBlock(ActivationRule.MOBS, AbstractBlock.Settings.create()
+        .mapColor(MapColor.STONE_GRAY)
+        .solid()
+        .instrument(Instrument.BASEDRUM)
+        .requiresTool()
+        .noCollision()
+        .strength(0.5F)
+        .pistonBehavior(PistonBehavior.DESTROY), 
+        BlockSetType.STONE);
     }
 
     public static void initialize(){

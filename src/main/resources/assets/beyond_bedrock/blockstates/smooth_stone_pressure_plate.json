@@ -1,0 +1,10 @@
+{
+    "variants": {
+      "powered=false": {
+        "model": "beyond_bedrock:block/smooth_stone/plate/up"
+      },
+      "powered=true": {
+        "model": "beyond_bedrock:block/smooth_stone/plate/down"
+      }
+    }
+  }

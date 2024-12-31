@@ -7,6 +7,25 @@
         "beyond_bedrock:steel_block",
         "beyond_bedrock:tin_ore",
         "beyond_bedrock:tin_block",
-        "beyond_bedrock:tin_raw_block"
+        "beyond_bedrock:tin_raw_block",
+        "beyond_bedrock:cracked_stone_brick_wall",
+        "beyond_bedrock:chiseled_stone_wall",
+        "beyond_bedrock:stone_wall",
+        "beyond_bedrock:smooth_stone_wall",
+        "beyond_bedrock:stone_brick_pressure_plate",
+        "beyond_bedrock:cracked_stone_brick_stairs",
+        "beyond_bedrock:cracked_stone_brick_slab",
+        "beyond_bedrock:chiseled_stone_stair",
+        "beyond_bedrock:chiseled_stone_slab",
+        "beyond_bedrock:smooth_stone_stair",
+        "beyond_bedrock:stone_brick_button",
+        "beyond_bedrock:cracked_stone_brick_pressure_plate",
+        "beyond_bedrock:cracked_stone_brick_button",
+        "beyond_bedrock:mossy_stone_brick_pressure_plate",
+        "beyond_bedrock:mossy_stone_brick_button",
+        "beyond_bedrock:chiseled_stone_pressure_plate",
+        "beyond_bedrock:chiseled_stone_button",
+        "beyond_bedrock:smooth_stone_button",
+        "beyond_bedrock:smooth_stone_pressure_plate"
     ]
 }

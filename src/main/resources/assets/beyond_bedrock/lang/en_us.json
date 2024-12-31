@@ -102,15 +102,29 @@
     "block.beyond_bedrock.cracked_stone_brick_stairs": "Cracked Stone Brick Stairs",
     "block.beyond_bedrock.cracked_stone_brick_slab": "Cracked Stone Brick Slab",
     "block.beyond_bedrock.cracked_stone_brick_wall": "Cracked Stone Brick Wall",
+    "block.beyond_bedrock.cracked_stone_brick_pressure_plate": "Cracked Stone Brick Pressure Plate",
+    "block.beyond_bedrock.cracked_stone_brick_button": "Cracked Stone Brick Button",
 
     "block.beyond_bedrock.chiseled_stone_stair": "Chiseled Stone Stairs",
     "block.beyond_bedrock.chiseled_stone_slab": "Chiseled Stone Slab",
     "block.beyond_bedrock.chiseled_stone_wall": "Chiseled Stone Wall",
+    "block.beyond_bedrock.chiseled_stone_pressure_plate": "Chiseled Stone Pressure Plate",
+    "block.beyond_bedrock.chiseled_stone_button": "Chiseled Stone Button",
 
     "block.beyond_bedrock.stone_wall": "Stone Wall",
 
+    "block.beyond_bedrock.stone_brick_button": "Stone Brick Button",
+    "block.beyond_bedrock.stone_brick_pressure_plate": "Stone Brick Pressure Plate",
+
+    "block.beyond_bedrock.mossy_stone_brick_pressure_plate": "Mossy Stone Brick Pressure Plate",
+    "block.beyond_bedrock.mossy_stone_brick_button": "Mossy Stone Brick Button",
+
     "block.beyond_bedrock.smooth_stone_wall": "Smooth Stone Wall",
     "block.beyond_bedrock.smooth_stone_stair": "Smooth Stone Stairs",
+    "block.beyond_bedrock.smooth_stone_button": "Smooth Stone Button",
+    "block.beyond_bedrock.smooth_stone_pressure_plate": "Smooth Stone Pressure Plate",
 
-    "itemGroup.beyond_bedrock.primary_item_group": "Beyond Bedrock"
+    "itemGroup.beyond_bedrock.primary_item_group": "Beyond Bedrock",
+    "itemGroup.beyond_bedrock.equipment_item_group": "Beyond Bedrock [Equipment]",
+    "itemGroup.beyond_bedrock.altstone_item_group": "Beyond Bedrock [Stone Varients]"
 }

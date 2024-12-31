@@ -1,0 +1,10 @@
+{
+    "variants": {
+      "powered=false": {
+        "model": "beyond_bedrock:block/mossy_stone_brick/plate/up"
+      },
+      "powered=true": {
+        "model": "beyond_bedrock:block/mossy_stone_brick/plate/down"
+      }
+    }
+  }

@@ -1,0 +1,10 @@
+{
+    "variants": {
+      "powered=false": {
+        "model": "beyond_bedrock:block/chiseled_stone/plate/up"
+      },
+      "powered=true": {
+        "model": "beyond_bedrock:block/chiseled_stone/plate/down"
+      }
+    }
+  }

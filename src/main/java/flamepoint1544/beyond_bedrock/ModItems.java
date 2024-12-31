@@ -199,13 +199,30 @@ public class ModItems {
     // (Thorium Ultimatium)
 
     // item group registry keys
-    public static final RegistryKey<ItemGroup> PRIMARY_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(BeyondBedrock.MOD_ID, "primary_item_group"));
+    public static final RegistryKey<ItemGroup> PRIMARY_GROUP_KEY = RegistryKey.of(
+        Registries.ITEM_GROUP.getKey(), 
+        Identifier.of(BeyondBedrock.MOD_ID, "primary_item_group"));
+    public static final RegistryKey<ItemGroup> EQUIPMENT_GROUP_KEY = RegistryKey.of(
+        Registries.ITEM_GROUP.getKey(), 
+        Identifier.of(BeyondBedrock.MOD_ID, "equipment_item_group"));
+    public static final RegistryKey<ItemGroup> ALTSTONE_GROUP_KEY = RegistryKey.of(
+        Registries.ITEM_GROUP.getKey(), 
+        Identifier.of(BeyondBedrock.MOD_ID, "altstone_item_group"));
 
     // Item Groups
     public static final ItemGroup PRIMARY_ITEM_GROUP = FabricItemGroup.builder()
-    .icon(() -> new ItemStack(Items.BEDROCK.asItem()))
-    .displayName(Text.translatable("itemGroup.beyond_bedrock.primary_item_group")).build();
-    
+        .icon(() -> new ItemStack(Items.BEDROCK.asItem()))
+        .displayName(Text.translatable("itemGroup.beyond_bedrock.primary_item_group"))
+        .build();
+    public static final ItemGroup EQUIPMENT_ITEM_GROUP = FabricItemGroup.builder()
+        .icon(() -> new ItemStack(ULTIMATIUM_SWORD))
+        .displayName(Text.translatable("itemGroup.beyond_bedrock.equipment_item_group"))
+        .build();
+    public static final ItemGroup ALTSTONE_ITEM_GROUP = FabricItemGroup.builder()
+        .icon(() -> new ItemStack(Items.BEDROCK.asItem()))
+        .displayName(Text.translatable("itemGroup.beyond_bedrock.altstone_item_group"))
+        .build();
+
     /***************************************************************************************************
      * +# register(Item item, String id): Item
      * Registers items using the string id and the modid defined in the main class to make an identifier
@@ -227,38 +244,33 @@ public class ModItems {
      *********************************************************/
     public static void initialize(){
         // Register group
+        Registry.register(Registries.ITEM_GROUP, EQUIPMENT_GROUP_KEY, EQUIPMENT_ITEM_GROUP);
+        Registry.register(Registries.ITEM_GROUP, ALTSTONE_GROUP_KEY, ALTSTONE_ITEM_GROUP);
         Registry.register(Registries.ITEM_GROUP, PRIMARY_GROUP_KEY, PRIMARY_ITEM_GROUP);
 
         // add items to registered group
-        ItemGroupEvents.modifyEntriesEvent(PRIMARY_GROUP_KEY).register(itemGroup ->{
+        ItemGroupEvents.modifyEntriesEvent(EQUIPMENT_GROUP_KEY).register(itemGroup ->{
             // Ultimatium
-            itemGroup.add(ULTIMATIUM);
-            itemGroup.add(ULTIMATIUM_RAW);
-            itemGroup.add(ULTIMATIUM_CORE);
-            // ultimatium tools
+            // Ultimatium Tools
             itemGroup.add(ULTIMATIUM_SWORD);
             itemGroup.add(ULTIMATIUM_PICKAXE);
             itemGroup.add(ULTIMATIUM_AXE);
             itemGroup.add(ULTIMATIUM_SHOVEL);
             itemGroup.add(ULTIMATIUM_HOE);
             itemGroup.add(ULTIMATIUM_SHEAR);
-            // ultimatium armor
+            // Ultimatium Armor
             itemGroup.add(ULTIMATIUM_HELMET);
             itemGroup.add(ULTIMATIUM_CHESTPLATE);
             itemGroup.add(ULTIMATIUM_LEGGINGS);
             itemGroup.add(ULTIMATIUM_BOOTS);
-            // ultimatium blocks
-            itemGroup.add(ModBlocks.ULTIMATIUM);
-            itemGroup.add(ModBlocks.ULTIMATIUM_ORE);
-            itemGroup.add(ModBlocks.ULTIMATIUM_RAW);
 
             // Netherite
-            // netherite frames
+            // Frame
             itemGroup.add(NETHERITE_FRAME_HELMET);
             itemGroup.add(NETHERITE_FRAME_CHESTPLATE);
             itemGroup.add(NETHERITE_FRAME_LEGGINGS);
             itemGroup.add(NETHERITE_FRAME_BOOTS);
-            // netherite base
+            // Base
             itemGroup.add(NETHERITE_BASE_HELMET);
             itemGroup.add(NETHERITE_BASE_CHESTPLATE);
             itemGroup.add(NETHERITE_BASE_LEGGINGS);
@@ -277,13 +289,6 @@ public class ModItems {
             itemGroup.add(COPPER_LEGGINGS);
             itemGroup.add(COPPER_BOOTS);
 
-            // Tin
-            itemGroup.add(TIN);
-            itemGroup.add(TIN_RAW);
-            // Tin Blocks
-            itemGroup.add(ModBlocks.TIN_BLOCK);
-            itemGroup.add(ModBlocks.TIN_ORE);
-            itemGroup.add(ModBlocks.TIN_RAW);
             // Tin tools
             itemGroup.add(TIN_SWORD);
             itemGroup.add(TIN_SHOVEL);
@@ -296,16 +301,6 @@ public class ModItems {
             itemGroup.add(TIN_LEGGINGS);
             itemGroup.add(TIN_BOOTS);
 
-            // Steel
-            itemGroup.add(STEEL_BLEND);
-            itemGroup.add(STEEL_INGOT);
-            itemGroup.add(CRUSHED_IRON);
-            itemGroup.add(CRUSHED_COAL);
-            // Steel blocks
-            itemGroup.add(ModBlocks.STEEL_BLOCK);
-            itemGroup.add(ModBlocks.STEEL_DUST);
-            itemGroup.add(ModBlocks.IRON_DUST);
-            itemGroup.add(ModBlocks.COAL_DUST);
             // Steel tools
             itemGroup.add(STEEL_SWORD);
             itemGroup.add(STEEL_SHOVEL);
@@ -332,27 +327,68 @@ public class ModItems {
             // tier 4
             itemGroup.add(MORTAR_N);
             itemGroup.add(MORTAR_U);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ALTSTONE_GROUP_KEY).register(itemGroup ->{
+            // Stone varients
+            itemGroup.add(ModBlocks.STONE_WALL);
+            // Stone Bricks
+            itemGroup.add(ModBlocks.STONE_BRICK_BUTTON);
+            itemGroup.add(ModBlocks.STONE_BRICK_PRESSURE);
+            // Cracked stone bricks
+            itemGroup.add(ModBlocks.CRACKED_STONE_BRICK_STAIR);
+            itemGroup.add(ModBlocks.CRACKED_STONE_BRICK_SLAB);
+            itemGroup.add(ModBlocks.CRACKED_STONE_BRICK_WALL);
+            itemGroup.add(ModBlocks.CRACKED_STONE_BRICK_PRESSURE);
+            itemGroup.add(ModBlocks.CRACKED_STONE_BRICK_BUTTON);
+            // Chiseled Stone
+            itemGroup.add(ModBlocks.CHISELED_STONE_STAIR);
+            itemGroup.add(ModBlocks.CHISELED_STONE_SLAB);
+            itemGroup.add(ModBlocks.CHISELED_STONE_WALL);
+            itemGroup.add(ModBlocks.CHISELED_STONE_BUTTON);
+            itemGroup.add(ModBlocks.CHISELED_STONE_PRESSURE);
+            // Gilded Stone
+            // Smooth Stone
+            itemGroup.add(ModBlocks.SMOOTH_STONE_STAIR);
+            itemGroup.add(ModBlocks.SMOOTH_STONE_WALL);
+            itemGroup.add(ModBlocks.SMOOTH_STONE_BUTTON);
+            itemGroup.add(ModBlocks.SMOOTH_STONE_PRESSURE);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(PRIMARY_GROUP_KEY).register(itemGroup ->{
+            // Ultimatium
+            itemGroup.add(ULTIMATIUM);
+            itemGroup.add(ULTIMATIUM_RAW);
+            itemGroup.add(ULTIMATIUM_CORE);
+            // Blocks
+            itemGroup.add(ModBlocks.ULTIMATIUM);
+            itemGroup.add(ModBlocks.ULTIMATIUM_ORE);
+            itemGroup.add(ModBlocks.ULTIMATIUM_RAW);
+
+            // Tin
+            itemGroup.add(TIN);
+            itemGroup.add(TIN_RAW);
+            // Tin Blocks
+            itemGroup.add(ModBlocks.TIN_BLOCK);
+            itemGroup.add(ModBlocks.TIN_ORE);
+            itemGroup.add(ModBlocks.TIN_RAW);
+
+            // Steel
+            itemGroup.add(STEEL_BLEND);
+            itemGroup.add(STEEL_INGOT);
+            itemGroup.add(CRUSHED_IRON);
+            itemGroup.add(CRUSHED_COAL);
+            // Steel blocks
+            itemGroup.add(ModBlocks.STEEL_BLOCK);
+            itemGroup.add(ModBlocks.STEEL_DUST);
+            itemGroup.add(ModBlocks.IRON_DUST);
+            itemGroup.add(ModBlocks.COAL_DUST);
 
             // Misc
             itemGroup.add(INFUSED_SUGAR);
             itemGroup.add(RED_DIAMOND);
             itemGroup.add(GILDED_STAR);
             itemGroup.add(GILDED_STAR_CLUSTER);
-
-            // Stone varients
-            itemGroup.add(ModBlocks.STONE_WALL);
-            // Cracked stone bricks
-            itemGroup.add(ModBlocks.CRACKED_STONE_BRICK_STAIR);
-            itemGroup.add(ModBlocks.CRACKED_STONE_BRICK_SLAB);
-            itemGroup.add(ModBlocks.CRACKED_STONE_BRICK_WALL);
-            // Chiseled Stone
-            itemGroup.add(ModBlocks.CHISELED_STONE_STAIR);
-            itemGroup.add(ModBlocks.CHISELED_STONE_SLAB);
-            itemGroup.add(ModBlocks.CHISELED_STONE_WALL);
-            // Gilded Stone
-            // Smooth Stone
-            itemGroup.add(ModBlocks.SMOOTH_STONE_STAIR);
-            itemGroup.add(ModBlocks.SMOOTH_STONE_WALL);
          });
     }
 }
