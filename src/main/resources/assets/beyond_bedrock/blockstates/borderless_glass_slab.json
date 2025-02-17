@@ -1,0 +1,14 @@
+
+{
+    "variants": {
+      "type=bottom": {
+        "model": "beyond_bedrock:block/glass/borderless_slab/bottom"
+      },
+      "type=double": {
+        "model": "beyond_bedrock:block/glass/borderless"
+      },
+      "type=top": {
+        "model": "beyond_bedrock:block/glass/borderless_slab/top"
+      }
+    }
+  }

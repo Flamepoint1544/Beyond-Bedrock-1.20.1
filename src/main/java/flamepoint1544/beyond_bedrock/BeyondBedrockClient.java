@@ -10,6 +10,8 @@ public class BeyondBedrockClient implements ClientModInitializer{
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BORDERLESS_GLASS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BORDERLESS_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BORDERLESS_GLASS_SLAB, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BORDERLESS_GLASS_SLAB, RenderLayer.getTranslucent());
     }
     
 }

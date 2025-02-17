@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:glass",
+        "beyond_bedrock:borderless_glass"
+    ]
+}

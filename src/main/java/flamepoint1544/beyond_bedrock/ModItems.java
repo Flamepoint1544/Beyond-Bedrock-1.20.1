@@ -358,6 +358,7 @@ public class ModItems {
 
             // Glass
             itemGroup.add(ModBlocks.BORDERLESS_GLASS);
+            itemGroup.add(ModBlocks.BORDERLESS_GLASS_SLAB);
         });
 
         ItemGroupEvents.modifyEntriesEvent(PRIMARY_GROUP_KEY).register(itemGroup ->{

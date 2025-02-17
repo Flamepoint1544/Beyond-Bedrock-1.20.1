@@ -125,6 +125,7 @@
     "block.beyond_bedrock.smooth_stone_pressure_plate": "Smooth Stone Pressure Plate",
 
     "block.beyond_bedrock.borderless_glass": "Borderless Glass",
+    "block.beyond_bedrock.borderless_glass_slab": "Borderless Glass Slab",
 
     "itemGroup.beyond_bedrock.primary_item_group": "Beyond Bedrock",
     "itemGroup.beyond_bedrock.equipment_item_group": "Beyond Bedrock [Equipment]",

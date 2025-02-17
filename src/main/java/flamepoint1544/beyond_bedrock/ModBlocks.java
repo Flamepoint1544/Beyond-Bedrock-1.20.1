@@ -1,5 +1,6 @@
 package flamepoint1544.beyond_bedrock;
 
+import flamepoint1544.beyond_bedrock.blocks.GlassSlab;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSetType;
@@ -184,6 +185,17 @@ public class ModBlocks {
     .suffocates(Blocks::never)
     .blockVision(Blocks::never)), 
     "borderless_glass", true);
+    // Glass
+    public static final Block BORDERLESS_GLASS_SLAB = register(new GlassSlab(AbstractBlock.Settings.create()
+    .instrument(Instrument.HAT)
+    .strength(0.3F)
+    .sounds(BlockSoundGroup.GLASS)
+    .nonOpaque()
+    .allowsSpawning(Blocks::never)
+    .solidBlock(Blocks::never)
+    .suffocates(Blocks::never)
+    .blockVision(Blocks::never)), 
+    "borderless_glass_slab", true);
 
     /******************************************************************
      * +# register(Block block, String id, boolean registerItem): Block

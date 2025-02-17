@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/slab",
+    "textures": {
+      "bottom": "beyond_bedrock:block/glass/borderless",
+      "side": "beyond_bedrock:block/glass/borderless",
+      "top": "beyond_bedrock:block/glass/borderless"
+    }
+  }
