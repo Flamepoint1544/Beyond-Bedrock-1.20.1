@@ -44,7 +44,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	
 	modImplementation("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}")
-        implementation("com.eliotlash.mclib:mclib:20")
+    implementation("com.eliotlash.mclib:mclib:20")
 }
 
 processResources {

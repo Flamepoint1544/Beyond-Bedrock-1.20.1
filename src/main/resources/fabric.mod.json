@@ -24,9 +24,6 @@
 			"flamepoint1544.beyond_bedrock.BeyondBedrockClient"
 		]
 	},
-	"mixins": [
-		"beyond_bedrock.mixins.json"
-	],
 	"depends": {
 		"fabricloader": ">=0.16.7",
 		"minecraft": "~1.20.1",
