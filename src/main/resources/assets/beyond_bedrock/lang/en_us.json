@@ -66,8 +66,8 @@
 
     "block.beyond_bedrock.steel_block": "Block of Steel",
     "block.beyond_bedrock.steel_dust": "Block of Steel Dust",
-    "block.beyond_bedrock.iron_dust": "Block of Iron Dust",
-    "block.beyond_bedrock.coal_dust": "Block of Coal Dust",
+    "block.beyond_bedrock.iron_dust": "Block of Crushed Iron",
+    "block.beyond_bedrock.coal_dust": "Block of Crushed Coal",
 
     "item.beyond_bedrock.steel_sword": "Steel Sword",
     "item.beyond_bedrock.steel_shovel": "Steel Shovel",
