@@ -1,6 +1,89 @@
 {
-    "parent": "item/handheld",
+    "credit": "Made with Blockbench",
+    "parent": "builtin/entity",
+    "texture_size": [
+      64,
+      64
+    ],
+    "display": {
+      "thirdperson_righthand": {
+        "translation": [
+          -0.5,
+          -12.5,
+          3.25
+        ]
+      },
+      "thirdperson_lefthand": {
+        "translation": [
+          0.5,
+          -12.5,
+          3.25
+        ]
+      },
+      "firstperson_righthand": {
+        "translation": [
+          0,
+          -11,
+          0
+        ]
+      },
+      "firstperson_lefthand": {
+        "translation": [
+          0,
+          -11,
+          0
+        ]
+      },
+      "ground": {
+        "rotation": [
+          35.65,
+          24.35,
+          62.02
+        ]
+      },
+      "gui": {
+        "rotation": [
+          93.74,
+          42.67,
+          -92.53
+        ],
+        "translation": [
+          -5,
+          -7.5,
+          0
+        ],
+        "scale": [
+          1,
+          0.5,
+          0.5
+        ]
+      },
+      "head": {
+        "rotation": [
+          -90,
+          42.75,
+          90
+        ],
+        "translation": [
+          29.75,
+          -8.75,
+          0
+        ]
+      },
+      "fixed": {
+        "rotation": [
+          -90,
+          44.75,
+          90
+        ],
+        "translation": [
+          11.5,
+          -10.75,
+          0
+        ]
+      }
+    },
     "textures": {
-        "layer0": "beyond_bedrock:item/ultimatium/tools/ultimatium_axe"
+      "particle": "beyond_bedrock:item/ultimatium/tools/ultimatium_axe"
     }
-}
+  }

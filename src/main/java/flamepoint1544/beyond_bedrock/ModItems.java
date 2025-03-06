@@ -3,6 +3,7 @@ package flamepoint1544.beyond_bedrock;
 import flamepoint1544.beyond_bedrock.Items.BBArmorMaterials;
 import flamepoint1544.beyond_bedrock.Items.BBToolMaterials;
 import flamepoint1544.beyond_bedrock.Items.MortarPestle;
+import flamepoint1544.beyond_bedrock.Items.geo.UltimatiumAxe;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.ArmorItem;
@@ -75,7 +76,7 @@ public class ModItems {
     public static final Item ULTIMATIUM_SWORD = register(new SwordItem(BBToolMaterials.ULTIMATIUM, swordDamage, swordSpeed, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_sword");
     public static final Item ULTIMATIUM_SHOVEL = register(new ShovelItem(BBToolMaterials.ULTIMATIUM, shovelDamage, shovelSpeed, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_shovel");
     public static final Item ULTIMATIUM_PICKAXE = register(new PickaxeItem(BBToolMaterials.ULTIMATIUM, pickaxeDamage, pickaxeSpeed, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_pickaxe");
-    public static final Item ULTIMATIUM_AXE = register(new AxeItem(BBToolMaterials.ULTIMATIUM, axeDamage, axeSpeed, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_axe");
+    public static final Item ULTIMATIUM_AXE = register(new UltimatiumAxe(BBToolMaterials.ULTIMATIUM, axeDamage, axeSpeed, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_axe");
     public static final Item ULTIMATIUM_HOE = register(new HoeItem(BBToolMaterials.ULTIMATIUM, hoeDamage, hoeSpeed, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_hoe");
     public static final Item ULTIMATIUM_SHEAR = register(new ShearsItem(new Item.Settings().maxDamage(4062).rarity(Rarity.EPIC)), "ultimatium_shears");
     // Ultimatium Armor
