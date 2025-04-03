@@ -1,12 +1,12 @@
-package flamepoint1544.beyond_bedrock.Items.geo;
+package flamepoint1544.beyond_bedrock.Items.geo.Ultimatium.Hoe;
 
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 import net.minecraft.client.render.item.BuiltinModelItemRenderer;
-import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.HoeItem;
 import net.minecraft.item.ToolMaterial;
-import software.bernie.geckolib.animatable.*;
+import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.client.RenderProvider;
 import software.bernie.geckolib.core.animatable.GeoAnimatable;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
@@ -18,26 +18,28 @@ import software.bernie.geckolib.core.animation.RawAnimation;
 import software.bernie.geckolib.core.object.PlayState;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
-public class UltimatiumPickaxe extends PickaxeItem implements GeoItem {
+public class UltimatiumHoe extends HoeItem implements GeoItem {
+    // Declare
     private final Supplier<Object> renderProvider = GeoItem.makeRenderer(this);
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
     private static final RawAnimation IDLE_ANIM = RawAnimation.begin().then("idle", Animation.LoopType.LOOP);
 
-    public UltimatiumPickaxe(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
+    public UltimatiumHoe(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
         super(material, attackDamage, attackSpeed, settings);
     }
 
     @Override
     public void createRenderer(Consumer<Object> consumer) {
         consumer.accept(new RenderProvider() {
-            private UltimatiumPickaxeRenderer renderer;
+            private UltimatiumHoeRenderer renderer;
 
             @Override
             public BuiltinModelItemRenderer getCustomRenderer() {
-                if (this.renderer == null)
-                    this.renderer = new UltimatiumPickaxeRenderer();
-
-                return this.renderer;
+                if(this.renderer == null) {
+                    this.renderer = new UltimatiumHoeRenderer();
+                }
+                
+                return renderer;
             }
         });
     }
@@ -61,4 +63,5 @@ public class UltimatiumPickaxe extends PickaxeItem implements GeoItem {
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return this.cache;
     }
+    
 }

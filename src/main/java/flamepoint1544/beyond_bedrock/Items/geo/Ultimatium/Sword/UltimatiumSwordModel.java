@@ -1,4 +1,4 @@
-package flamepoint1544.beyond_bedrock.Items.geo;
+package flamepoint1544.beyond_bedrock.Items.geo.Ultimatium.Sword;
 
 import flamepoint1544.beyond_bedrock.BeyondBedrock;
 import net.minecraft.util.Identifier;

@@ -3,10 +3,11 @@ package flamepoint1544.beyond_bedrock;
 import flamepoint1544.beyond_bedrock.Items.BBArmorMaterials;
 import flamepoint1544.beyond_bedrock.Items.BBToolMaterials;
 import flamepoint1544.beyond_bedrock.Items.MortarPestle;
-import flamepoint1544.beyond_bedrock.Items.geo.UltimatiumAxe;
-import flamepoint1544.beyond_bedrock.Items.geo.UltimatiumPickaxe;
-import flamepoint1544.beyond_bedrock.Items.geo.UltimatiumShovel;
-import flamepoint1544.beyond_bedrock.Items.geo.UltimatiumSword;
+import flamepoint1544.beyond_bedrock.Items.geo.Ultimatium.Axe.UltimatiumAxe;
+import flamepoint1544.beyond_bedrock.Items.geo.Ultimatium.Hoe.UltimatiumHoe;
+import flamepoint1544.beyond_bedrock.Items.geo.Ultimatium.Pickaxe.UltimatiumPickaxe;
+import flamepoint1544.beyond_bedrock.Items.geo.Ultimatium.Shovel.UltimatiumShovel;
+import flamepoint1544.beyond_bedrock.Items.geo.Ultimatium.Sword.UltimatiumSword;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.ArmorItem;
@@ -80,7 +81,7 @@ public class ModItems {
     public static final Item ULTIMATIUM_SHOVEL = register(new UltimatiumShovel(BBToolMaterials.ULTIMATIUM, shovelDamage, shovelSpeed, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_shovel");
     public static final Item ULTIMATIUM_PICKAXE = register(new UltimatiumPickaxe(BBToolMaterials.ULTIMATIUM, pickaxeDamage, pickaxeSpeed, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_pickaxe");
     public static final Item ULTIMATIUM_AXE = register(new UltimatiumAxe(BBToolMaterials.ULTIMATIUM, axeDamage, axeSpeed, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_axe");
-    public static final Item ULTIMATIUM_HOE = register(new HoeItem(BBToolMaterials.ULTIMATIUM, hoeDamage, hoeSpeed, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_hoe");
+    public static final Item ULTIMATIUM_HOE = register(new UltimatiumHoe(BBToolMaterials.ULTIMATIUM, hoeDamage, hoeSpeed, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_hoe");
     public static final Item ULTIMATIUM_SHEAR = register(new ShearsItem(new Item.Settings().maxDamage(4062).rarity(Rarity.EPIC)), "ultimatium_shears");
     // Ultimatium Armor
     public static final Item ULTIMATIUM_HELMET = register(new ArmorItem(BBArmorMaterials.ULTIMATIUM, Type.HELMET, new Item.Settings().rarity(Rarity.EPIC)), "ultimatium_helmet");

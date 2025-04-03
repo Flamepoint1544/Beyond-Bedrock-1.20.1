@@ -1,6 +1,89 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "beyond_bedrock:item/ultimatium/tools/ultimatium_hoe"
+  "credit": "Made with Blockbench",
+  "parent": "builtin/entity",
+  "texture_size": [
+    64,
+    64
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [
+        -0.5,
+        -14.25,
+        2.25
+      ]
+    },
+    "thirdperson_lefthand": {
+      "translation": [
+        0.5,
+        -13.5,
+        2.25
+      ]
+    },
+    "firstperson_righthand": {
+      "translation": [
+        0,
+        -10,
+        0
+      ]
+    },
+    "firstperson_lefthand": {
+      "translation": [
+        0,
+        -10,
+        0
+      ]
+    },
+    "ground": {
+      "rotation": [
+        -0.75,
+        55.69,
+        81.64
+      ]
+    },
+    "gui": {
+      "rotation": [
+        -90,
+        -45,
+        -90
+      ],
+      "translation": [
+        -9.75,
+        -8.25,
+        -2
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        0,
+        90
+      ],
+      "translation": [
+        16.25,
+        -5.5,
+        8.5
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        90,
+        -45,
+        90
+      ],
+      "translation": [
+        11,
+        -12,
+        -2
+      ]
     }
+  },
+  "textures": {
+    "particle": "beyond_bedrock:item/ultimatium_hoe"
+  }
 }
