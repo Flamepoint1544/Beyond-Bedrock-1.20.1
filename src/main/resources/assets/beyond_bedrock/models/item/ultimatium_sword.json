@@ -1,6 +1,89 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "beyond_bedrock:item/ultimatium/tools/ultimatium_sword"
+  "credit": "Made with Blockbench",
+  "parent": "builtin/entity",
+  "texture_size": [
+    64,
+    64
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [
+        -0.5,
+        -8.75,
+        2.25
+      ]
+    },
+    "thirdperson_lefthand": {
+      "translation": [
+        0.5,
+        -8.75,
+        2.25
+      ]
+    },
+    "firstperson_righthand": {
+      "translation": [
+        0,
+        -9.25,
+        0
+      ]
+    },
+    "firstperson_lefthand": {
+      "translation": [
+        0,
+        -9.25,
+        0
+      ]
+    },
+    "ground": {
+      "rotation": [
+        39.49,
+        15.36,
+        41.24
+      ]
+    },
+    "gui": {
+      "rotation": [
+        -90,
+        -45,
+        -90
+      ],
+      "translation": [
+        -8.75,
+        -8,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.7,
+        0.7
+      ]
+    },
+    "head": {
+      "rotation": [
+        -90,
+        0,
+        90
+      ],
+      "translation": [
+        23.5,
+        2,
+        0
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        -90,
+        45,
+        90
+      ],
+      "translation": [
+        11.5,
+        -11,
+        0
+      ]
     }
+  },
+  "textures": {
+    "particle": "beyond_bedrock:item/ultimatium_sword"
+  }
 }

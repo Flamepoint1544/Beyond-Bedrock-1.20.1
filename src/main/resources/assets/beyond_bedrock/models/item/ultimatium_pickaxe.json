@@ -1,6 +1,94 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "beyond_bedrock:item/ultimatium/tools/ultimatium_pickaxe"
+  "credit": "Made with Blockbench",
+  "parent": "builtin/entity",
+  "texture_size": [
+    64,
+    64
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [
+        -0.5,
+        -12.5,
+        3.25
+      ]
+    },
+    "thirdperson_lefthand": {
+      "translation": [
+        0.5,
+        -12.5,
+        3.25
+      ]
+    },
+    "firstperson_righthand": {
+      "translation": [
+        0,
+        -13,
+        0
+      ]
+    },
+    "firstperson_lefthand": {
+      "translation": [
+        0,
+        -13,
+        0
+      ]
+    },
+    "ground": {
+      "rotation": [
+        35.65,
+        24.35,
+        62.02
+      ],
+      "translation": [
+        9.25,
+        0,
+        -5.5
+      ]
+    },
+    "gui": {
+      "rotation": [
+        93.74,
+        42.67,
+        -92.53
+      ],
+      "translation": [
+        -7,
+        -7.25,
+        0
+      ],
+      "scale": [
+        1,
+        0.6,
+        0.6
+      ]
+    },
+    "head": {
+      "rotation": [
+        53.75,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        -3.5,
+        -27.75
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        -90,
+        44.75,
+        90
+      ],
+      "translation": [
+        11.5,
+        -10.75,
+        0
+      ]
     }
+  },
+  "textures": {
+    "particle": "beyond_bedrock:item/ultimatium_pickaxe"
+  }
 }
